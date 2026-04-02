@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>ASIST·IA — Control Horario Inteligente para Empresas Españolas</title>
+  <meta name="description" content="Plataforma SaaS de control horario para empresas españolas. Fichaje GPS, panel RRHH, informes PDF automáticos y cumplimiento normativa 2026. Desde 3,99 €/usuario/mes." />
+  <meta name="keywords" content="control horario, fichaje digital, software RRHH, pymes España, registro jornada, normativa laboral 2026" />
+  <meta name="author" content="Luis Villegas Cebrián" />
+
+  <!-- Open Graph (LinkedIn / redes sociales) -->
+  <meta property="og:title" content="ASIST·IA — Control Horario con Inteligencia Artificial" />
+  <meta property="og:description" content="La plataforma todo en uno para el control horario de tu empresa. Cumple la ley, elimina el fraude y ahorra horas de gestión." />
+  <meta property="og:image" content="assets/img/og-asistia.png" />
+  <meta property="og:url" content="https://asistia.es" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ASIST·IA — Control Horario Inteligente" />
+  <meta name="twitter:description" content="Fichaje GPS · Panel RRHH · Informes PDF · Cumplimiento legal 2026" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/logo-asistia.png" />
+  <link rel="apple-touch-icon" href="assets/img/logo-asistia.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVEGACIÓN
+       ============================================================ -->
+  <header>
+    <nav class="nav" aria-label="Navegación principal">
+
+      <a href="#inicio" class="nav-logo" aria-label="ASIST·IA — Inicio">
+        <img src="assets/img/logo-asistia.png" alt="Logo ASIST·IA" width="38" height="38" />
+        <div class="nav-logo-text">
+          <div class="logo-nombre">ASIST·IA</div>
+          <div class="logo-claim">Asistencia Laboral Inteligente</div>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#funcionalidades">Funcionalidades</a></li>
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#equipo">El equipo</a></li>
+      </ul>
+
+      <a href="#descarga" class="nav-cta" aria-label="Descargar guía gratuita">Descargar guía</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </nav>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section class="hero" aria-labelledby="hero-titulo">
+
+      <div class="hero-content">
+        <div class="hero-tag" aria-hidden="true">
+          <span class="hero-tag-dot"></span>
+          Control horario con IA · España 2026
+        </div>
+
+        <h1 id="hero-titulo">
+          Controla el tiempo<br>
+          de tu equipo.<br>
+          <em>Sin complicaciones.</em>
+        </h1>
+
+        <p class="hero-desc">
+          Fichaje móvil con GPS, panel de control en tiempo real, informes PDF automáticos
+          e integraciones con tu software actual. Todo en una plataforma que cumple la
+          normativa española 2026.
+        </p>
+
+        <div class="hero-cta-wrap">
+          <a href="#descarga" class="btn-primario">
+            <span aria-hidden="true">→</span>
+            Descarga la guía gratuita
+          </a>
+          <p class="hero-sub">Sin tarjeta de crédito &nbsp;·&nbsp; PDF inmediato &nbsp;·&nbsp; Listo en 2 minutos</p>
+        </div>
+
+        <div class="hero-compliance" role="list" aria-label="Certificaciones de cumplimiento">
+          <div class="badge-legal" role="listitem">
+            <span class="badge-legal-dot" aria-hidden="true"></span>
+            RGPD Compliant
+          </div>
+          <div class="badge-legal" role="listitem">
+            <span class="badge-legal-dot" aria-hidden="true"></span>
+            LOPD
+          </div>
+          <div class="badge-legal" role="listitem">
+            <span class="badge-legal-dot" aria-hidden="true"></span>
+            Min. Trabajo España 2026
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard simulado -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="dashboard-mock">
+
+          <div class="dash-topbar">
+            <div class="dash-dot" style="background: var(--dorado); opacity: 0.7;"></div>
+            <div class="dash-dot" style="background: rgba(237,232,220,0.2);"></div>
+            <div class="dash-dot" style="background: rgba(237,232,220,0.2);"></div>
+            <span class="dash-label">PANEL DE CONTROL · HOY</span>
+          </div>
+
+          <div class="dash-metrics">
+            <div class="dash-metric">
+              <div class="dash-metric-label">Empleados activos</div>
+              <div class="dash-metric-val" style="color: var(--dorado);">48</div>
+              <div class="dash-bar-track">
+                <div class="dash-bar-fill" style="width: 82%; background: var(--dorado);"></div>
+              </div>
+            </div>
+            <div class="dash-metric">
+              <div class="dash-metric-label">Horas registradas</div>
+              <div class="dash-metric-val" style="color: #7BB89A;">312h</div>
+              <div class="dash-bar-track">
+                <div class="dash-bar-fill" style="width: 65%; background: #7BB89A;"></div>
+              </div>
+            </div>
+            <div class="dash-metric">
+              <div class="dash-metric-label">Incidencias</div>
+              <div class="dash-metric-val" style="color: var(--azul);">2</div>
+              <div class="dash-bar-track">
+                <div class="dash-bar-fill" style="width: 8%; background: var(--azul);"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dash-row">
+            <div class="dash-card-sm">
+              <div class="dash-icon-circle" style="background: var(--dorado-suave); border: 1px solid var(--dorado-borde);">✓</div>
+              <div class="dash-card-info">
+                <span class="dash-metric-label">Solicitudes hoy</span>
+                <span>3 pendientes</span>
+              </div>
+            </div>
+            <div class="dash-card-sm">
+              <div class="dash-icon-circle" style="background: var(--azul-suave); border: 1px solid var(--azul-borde);">📄</div>
+              <div class="dash-card-info">
+                <span class="dash-metric-label">Informe PDF</span>
+                <span>Listo · Marzo</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dash-mapa">
+            <div class="dash-mapa-grid" aria-hidden="true"></div>
+            <div class="dash-pin-ring">
+              <div class="dash-pin"></div>
+            </div>
+            <span class="dash-mapa-txt">GPS validado · Valencia, ES</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FRANJA TECNOLÓGICA
+         ============================================================ -->
+    <div class="tech-strip" aria-label="Tecnologías utilizadas">
+      <p class="tech-strip-label">Stack tecnológico · Construido con tecnología enterprise</p>
+      <div class="tech-logos" role="list">
+        <div class="tech-item" role="listitem">
+          <span class="tech-dot" style="background: #512BD4;" aria-hidden="true"></span>
+          ASP.NET Core 8
+        </div>
+        <div class="tech-item" role="listitem">
+          <span class="tech-dot" style="background: #7B3FE4;" aria-hidden="true"></span>
+          Blazor WebAssembly
+        </div>
+        <div class="tech-item" role="listitem">
+          <span class="tech-dot" style="background: #336791; border-radius: 50%;" aria-hidden="true"></span>
+          PostgreSQL 14
+        </div>
+        <div class="tech-item" role="listitem">
+          <span class="tech-dot" style="background: #EF4444;" aria-hidden="true"></span>
+          QuestPDF
+        </div>
+        <div class="tech-item" role="listitem">
+          <span class="tech-dot" style="background: #1DA462;" aria-hidden="true"></span>
+          Leaflet.js
+        </div>
+        <div class="tech-item" role="listitem">
+          <span class="tech-dot" style="background: #0078D4;" aria-hidden="true"></span>
+          Azure Ready
+        </div>
+        <div class="tech-item" role="listitem">
+          <span class="tech-dot" style="background: #2496ED;" aria-hidden="true"></span>
+          Docker
+        </div>
+        <div class="tech-item" role="listitem">
+          <span class="tech-dot" style="background: var(--dorado);" aria-hidden="true"></span>
+          JWT Auth
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         EL PROBLEMA
+         ============================================================ -->
+    <section aria-labelledby="problema-titulo">
+      <div class="sec-tag" aria-hidden="true">El problema</div>
+      <h2 id="problema-titulo" class="sec-title">
+        ¿Sigues gestionando el horario con<br>
+        <em>Excel, papel o apps que no conectan?</em>
+      </h2>
+
+      <div class="problems-grid" role="list">
+
+        <article class="problem-card fade-up" role="listitem">
+          <div class="problem-icon" style="background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.2);" aria-hidden="true">⚖️</div>
+          <h3 class="problem-title">Riesgo legal constante</h3>
+          <p class="problem-desc">El registro horario es obligatorio en España desde 2019. Una inspección de trabajo puede costarte hasta 6.250 € en multas por incumplimiento.</p>
+        </article>
+
+        <article class="problem-card fade-up" role="listitem">
+          <div class="problem-icon" style="background: rgba(74,111,165,0.1); border: 1px solid rgba(74,111,165,0.2);" aria-hidden="true">⏱️</div>
+          <h3 class="problem-title">Horas perdidas cada mes</h3>
+          <p class="problem-desc">Tu equipo de RRHH dedica tiempo valioso a cuadrar fichajes, corregir errores manuales y preparar informes que deberían generarse solos.</p>
+        </article>
+
+        <article class="problem-card fade-up" role="listitem">
+          <div class="problem-icon" style="background: rgba(123,184,154,0.1); border: 1px solid rgba(123,184,154,0.2);" aria-hidden="true">🔍</div>
+          <h3 class="problem-title">Sin visibilidad real</h3>
+          <p class="problem-desc">No sabes con certeza quién está trabajando, desde dónde, ni si las horas declaradas coinciden con la realidad de tu empresa.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BANDA DE IMÁGENES AMBIENTE
+         ============================================================ -->
+    <div class="img-banda" aria-label="Imágenes del entorno de trabajo">
+      <!--
+        INSTRUCCIONES PARA AÑADIR IMÁGENES:
+        1. Guarda las imágenes en assets/img/ambiente/
+        2. Reemplaza el contenido de cada .img-banda-item por:
+           <img src="assets/img/ambiente/nombre-imagen.jpg" alt="Descripción" loading="lazy" />
+
+        Imágenes recomendadas:
+        - ambiente-01.jpg : Equipo trabajando en oficina open space
+        - ambiente-02.jpg : Persona fichando desde móvil
+        - ambiente-03.jpg : Reunión de RRHH con tablet
+      -->
+      <div class="img-banda-item">
+        <div class="img-banda-placeholder">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/>
+          </svg>
+          <span>Equipo en oficina<br><em style="font-size:10px;opacity:0.6;">assets/img/ambiente/ambiente-01.jpg</em></span>
+        </div>
+      </div>
+      <div class="img-banda-item">
+        <div class="img-banda-placeholder">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/>
+          </svg>
+          <span>Fichaje móvil<br><em style="font-size:10px;opacity:0.6;">assets/img/ambiente/ambiente-02.jpg</em></span>
+        </div>
+      </div>
+      <div class="img-banda-item">
+        <div class="img-banda-placeholder">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/>
+          </svg>
+          <span>Reunión RRHH<br><em style="font-size:10px;opacity:0.6;">assets/img/ambiente/ambiente-03.jpg</em></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         LA SOLUCIÓN — FUNCIONALIDADES
+         ============================================================ -->
+    <section id="funcionalidades" class="bg-sup" aria-labelledby="solucion-titulo">
+      <div class="sec-tag" aria-hidden="true">La solución</div>
+      <h2 id="solucion-titulo" class="sec-title">
+        ASIST·IA lo resuelve todo.<br><em>En una sola plataforma.</em>
+      </h2>
+      <p class="sec-desc">
+        La competencia te cobra por separado cada módulo. En ASIST·IA todo está incluido
+        desde el primer día, con tecnología enterprise accesible para pymes.
+      </p>
+
+      <div class="features-grid" role="list">
+
+        <article class="feature-card fade-up" role="listitem">
+          <span class="feature-num" aria-hidden="true">01</span>
+          <div class="feature-icon" aria-hidden="true">📱</div>
+          <h3 class="feature-title">Fichaje móvil con GPS</h3>
+          <p class="feature-desc">Tus empleados fichan desde el móvil con validación automática de ubicación GPS. Funciona en iOS y Android. Radio de validación configurable por sede.</p>
+        </article>
+
+        <article class="feature-card fade-up" role="listitem">
+          <span class="feature-num" aria-hidden="true">02</span>
+          <div class="feature-icon" aria-hidden="true">📊</div>
+          <h3 class="feature-title">Panel de control en tiempo real</h3>
+          <p class="feature-desc">Visión completa de toda la plantilla: presencia, ausencias, turnos e incidencias. KPIs actualizados al instante para RRHH y gerencia.</p>
+        </article>
+
+        <article class="feature-card fade-up" role="listitem">
+          <span class="feature-num" aria-hidden="true">03</span>
+          <div class="feature-icon" aria-hidden="true">📄</div>
+          <h3 class="feature-title">Informes PDF automáticos</h3>
+          <p class="feature-desc">Exporta informes listos para inspección con un clic. Generación mensual automática con QuestPDF. Descarga directa desde el panel.</p>
+        </article>
+
+        <article class="feature-card fade-up" role="listitem">
+          <span class="feature-num" aria-hidden="true">04</span>
+          <div class="feature-icon" aria-hidden="true">✍️</div>
+          <h3 class="feature-title">Solicitudes con firma digital</h3>
+          <p class="feature-desc">Vacaciones, permisos, bajas y vestuario con firma digital automática, timestamp y workflow de aprobación con comentarios.</p>
+        </article>
+
+        <article class="feature-card fade-up" role="listitem">
+          <span class="feature-num" aria-hidden="true">05</span>
+          <div class="feature-icon" aria-hidden="true">🔗</div>
+          <h3 class="feature-title">API REST e integraciones</h3>
+          <p class="feature-desc">Compatible con ERP, nóminas y software de RRHH. API REST documentada para integraciones personalizadas con tu stack actual.</p>
+        </article>
+
+        <article class="feature-card fade-up" role="listitem">
+          <span class="feature-num" aria-hidden="true">06</span>
+          <div class="feature-icon" aria-hidden="true">🏢</div>
+          <h3 class="feature-title">Multi-tenant · Tu marca</h3>
+          <p class="feature-desc">Cada empresa tiene su propia identidad visual, colores y logo. Escalable a ilimitados clientes con separación completa de datos.</p>
+        </article>
+
+      </div>
+
+      <p class="feature-diferenciador">
+        <strong>La competencia te cobra por separado cada módulo.</strong>
+        En ASIST·IA todo está incluido desde el primer día, sin costes ocultos ni sorpresas en la factura.
+      </p>
+    </section>
+
+    <!-- ============================================================
+         CAPTURAS DE PANTALLA
+         ============================================================ -->
+    <section class="capturas-section" aria-labelledby="capturas-titulo">
+      <div class="sec-tag" aria-hidden="true">La aplicación</div>
+      <h2 id="capturas-titulo" class="sec-title">
+        Diseñada para ser <em>intuitiva desde el primer día.</em>
+      </h2>
+      <p class="sec-desc">
+        Sin formación técnica. Sin manuales interminables. Tus empleados fichan en segundos y tú tienes el control desde el primer acceso.
+      </p>
+
+      <div class="capturas-grid" role="list">
+        <!--
+          INSTRUCCIONES PARA AÑADIR CAPTURAS:
+          1. Guarda las capturas en assets/img/capturas/
+          2. Reemplaza el .captura-placeholder por:
+             <img src="assets/img/capturas/nombre.png" alt="Descripción" loading="lazy" />
+
+          Capturas recomendadas:
+          - dashboard.png     : Panel de control principal
+          - fichaje.png       : Pantalla de fichaje móvil
+          - calendario.png    : Vista calendario de asistencia
+          - solicitudes.png   : Pantalla de solicitudes
+          - informe.png       : Informe PDF generado
+          - login.png         : Pantalla de login
+        -->
+
+        <article class="captura-item fade-up" role="listitem">
+          <div class="captura-topbar" aria-hidden="true">
+            <div class="captura-dot" style="background: var(--dorado); opacity:0.7;"></div>
+            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
+            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
+            <span class="captura-titulo">Dashboard · Panel de control</span>
+          </div>
+          <div class="captura-img-wrap">
+            <div class="captura-placeholder">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <span>assets/img/capturas/dashboard.png</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="captura-item fade-up" role="listitem">
+          <div class="captura-topbar" aria-hidden="true">
+            <div class="captura-dot" style="background: var(--dorado); opacity:0.7;"></div>
+            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
+            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
+            <span class="captura-titulo">Fichaje móvil con GPS</span>
+          </div>
+          <div class="captura-img-wrap">
+            <div class="captura-placeholder">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <span>assets/img/capturas/fichaje.png</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="captura-item fade-up" role="listitem">
+          <div class="captura-topbar" aria-hidden="true">
+            <div class="captura-dot" style="background: var(--dorado); opacity:0.7;"></div>
+            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
+            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
+            <span class="captura-titulo">Calendario de asistencia</span>
+          </div>
+          <div class="captura-img-wrap">
+            <div class="captura-placeholder">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <span>assets/img/capturas/calendario.png</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="captura-item fade-up" role="listitem">
+          <div class="captura-topbar" aria-hidden="true">
+            <div class="captura-dot" style="background: var(--dorado); opacity:0.7;"></div>
+            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
+            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
+            <span class="captura-titulo">Solicitudes y aprobaciones</span>
+          </div>
+          <div class="captura-img-wrap">
+            <div class="captura-placeholder">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <span>assets/img/capturas/solicitudes.png</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="captura-item fade-up" role="listitem">
+          <div class="captura-topbar" aria-hidden="true">
+            <div class="captura-dot" style="background: var(--dorado); opacity:0.7;"></div>
+            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
+            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
+            <span class="captura-titulo">Informe PDF automático</span>
+          </div>
+          <div class="captura-img-wrap">
+            <div class="captura-placeholder">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <span>assets/img/capturas/informe.png</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="captura-item fade-up" role="listitem">
+          <div class="captura-topbar" aria-hidden="true">
+            <div class="captura-dot" style="background: var(--dorado); opacity:0.7;"></div>
+            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
+            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
+            <span class="captura-titulo">Login · Autenticación DNI/NIE</span>
+          </div>
+          <div class="captura-img-wrap">
+            <div class="captura-placeholder">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <span>assets/img/capturas/login.png</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CÓMO FUNCIONA
+         ============================================================ -->
+    <section id="como-funciona" class="bg-sup" aria-labelledby="pasos-titulo">
+      <div class="sec-tag" aria-hidden="true">Cómo funciona</div>
+      <h2 id="pasos-titulo" class="sec-title">
+        Empieza en <em>3 pasos.</em><br>Sin formación técnica.
+      </h2>
+
+      <div class="steps-grid" role="list">
+
+        <div class="step fade-up" role="listitem">
+          <div class="step-num" aria-label="Paso 1">1</div>
+          <h3 class="step-title">Configura tu empresa</h3>
+          <p class="step-desc">Añade tu plantilla, horarios, turnos y ubicaciones GPS en minutos. Sin instalación.</p>
+        </div>
+
+        <div class="step fade-up" role="listitem">
+          <div class="step-num" aria-label="Paso 2">2</div>
+          <h3 class="step-title">Tus empleados fichan</h3>
+          <p class="step-desc">App móvil intuitiva. Acceso por DNI/NIE sin contraseñas que olvidar. iOS y Android.</p>
+        </div>
+
+        <div class="step fade-up" role="listitem">
+          <div class="step-num" aria-label="Paso 3">3</div>
+          <h3 class="step-title">Tú controlas todo</h3>
+          <p class="step-desc">Informes, alertas, aprobaciones y exportaciones desde un panel unificado. En tiempo real.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ESTADÍSTICAS — PRUEBA SOCIAL
+         ============================================================ -->
+    <section aria-labelledby="stats-titulo">
+      <div class="sec-tag" aria-hidden="true">El mercado lo necesita</div>
+      <h2 id="stats-titulo" class="sec-title">
+        Construido para la<br><em>realidad de las pymes españolas.</em>
+      </h2>
+
+      <div class="stats-grid" role="list">
+        <div class="stat-card fade-up" role="listitem">
+          <div class="stat-num">1,2M+</div>
+          <p class="stat-desc">empresas en España obligadas a registrar diariamente la jornada laboral de sus trabajadores</p>
+        </div>
+        <div class="stat-card fade-up" role="listitem">
+          <div class="stat-num">67%</div>
+          <p class="stat-desc">de las pymes aún no dispone de un sistema digital de control horario homologado</p>
+        </div>
+        <div class="stat-card fade-up" role="listitem">
+          <div class="stat-num">6.250€</div>
+          <p class="stat-desc">multa mínima por incumplimiento del registro horario obligatorio según inspección de trabajo</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EL EQUIPO — FUNDADOR
+         ============================================================ -->
+    <section id="equipo" class="bg-sup" aria-labelledby="equipo-titulo">
+      <div class="sec-tag" aria-hidden="true">El equipo</div>
+      <h2 id="equipo-titulo" class="sec-title">
+        Detrás de ASIST·IA hay<br><em>experiencia real.</em>
+      </h2>
+
+      <div class="founder-grid">
+
+        <div class="founder-img-wrap">
+          <img
+            class="founder-img"
+            src="assets/img/luis-villegas.jpeg"
+            alt="Luis Villegas Cebrián, fundador y desarrollador de ASIST·IA"
+            loading="lazy"
+            width="220"
+            height="260"
+          />
+          <div class="founder-frame" aria-hidden="true"></div>
+          <div class="founder-badge">Fundador &amp; CTO</div>
+        </div>
+
+        <div class="founder-info">
+          <h3 class="founder-nombre">Luis Villegas Cebrián</h3>
+          <p class="founder-rol">Desarrollador Full-Stack · ASP.NET · Blazor · PostgreSQL</p>
+          <p class="founder-bio">
+            Desarrollador full-stack especializado en soluciones empresariales para el mercado español.
+            ASIST·IA nace de la necesidad real de las pymes de cumplir la normativa laboral sin depender
+            de herramientas caras, fragmentadas o difíciles de implantar.
+          </p>
+          <p class="founder-bio" style="margin-top: 1rem;">
+            Construido con tecnología enterprise — ASP.NET Core 8, Blazor WebAssembly y PostgreSQL —
+            para garantizar la seguridad, escalabilidad y cumplimiento legal que tu empresa necesita.
+            Diseñado desde cero para cumplir la normativa del Ministerio de Trabajo España 2026.
+          </p>
+          <div class="founder-links">
+            <a href="https://www.linkedin.com/in/luis-villegas" class="founder-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:asistia.web@outlook.com" class="founder-link">asistia.web@outlook.com</a>
+            <a href="mailto:AsesoramientoAsistia@outlook.es" class="founder-link">Solicitar asesoramiento</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PLANES Y PRECIOS
+         ============================================================ -->
+    <section id="precios" aria-labelledby="precios-titulo">
+      <div class="sec-tag" aria-hidden="true">Planes y precios</div>
+      <h2 id="precios-titulo" class="sec-title">
+        Elige el plan que <em>se adapta a tu empresa.</em>
+      </h2>
+      <p class="sec-desc">
+        Precios transparentes, sin costes ocultos. Todos los planes incluyen las funcionalidades principales.
+        Cambia o cancela cuando quieras.
+      </p>
+
+      <div class="planes-grid" role="list">
+
+        <article class="plan-card fade-up" role="listitem" aria-label="Plan Starter">
+          <h3 class="plan-nombre">Starter</h3>
+          <div class="plan-precio">3,99€ <span>/ usuario / mes</span></div>
+          <p class="plan-para">Para equipos de 10 a 25 personas</p>
+          <div class="plan-divider"></div>
+          <div class="plan-feature">Fichaje móvil con GPS validado</div>
+          <div class="plan-feature">Panel de control RRHH</div>
+          <div class="plan-feature">Informes PDF automáticos</div>
+          <div class="plan-feature">Solicitudes con firma digital</div>
+          <div class="plan-feature">Autenticación por DNI/NIE</div>
+          <div class="plan-feature">Cumplimiento normativa 2026</div>
+          <button class="plan-btn btn-solicitar" data-plan="Starter" aria-label="Solicitar información sobre el plan Starter">
+            Solicitar información
+          </button>
+        </article>
+
+        <article class="plan-card destacado fade-up" role="listitem" aria-label="Plan Business, el más popular">
+          <div class="plan-popular" aria-label="Plan más popular">Más popular</div>
+          <h3 class="plan-nombre">Business</h3>
+          <div class="plan-precio">5,99€ <span>/ usuario / mes</span></div>
+          <p class="plan-para">Para empresas de 25 a 100 personas</p>
+          <div class="plan-divider"></div>
+          <div class="plan-feature">Todo lo del plan Starter</div>
+          <div class="plan-feature">Gestión avanzada de turnos</div>
+          <div class="plan-feature">Multi-sede y multi-ubicación</div>
+          <div class="plan-feature">API REST con integraciones</div>
+          <div class="plan-feature">Alertas y notificaciones</div>
+          <div class="plan-feature">Soporte prioritario</div>
+          <button class="plan-btn btn-solicitar" data-plan="Business" aria-label="Solicitar información sobre el plan Business">
+            Solicitar información
+          </button>
+        </article>
+
+        <article class="plan-card fade-up" role="listitem" aria-label="Plan Enterprise">
+          <h3 class="plan-nombre">Enterprise</h3>
+          <div class="plan-precio" style="font-size: 20px; padding-top: 5px;">A consultar</div>
+          <p class="plan-para">Más de 100 empleados · Multi-tenant</p>
+          <div class="plan-divider"></div>
+          <div class="plan-feature">Todo lo del plan Business</div>
+          <div class="plan-feature">Identidad visual propia</div>
+          <div class="plan-feature">Implantación personalizada</div>
+          <div class="plan-feature">SLA y soporte dedicado</div>
+          <div class="plan-feature">Multisede y multiempresa</div>
+          <div class="plan-feature">Auditorías independientes</div>
+          <button class="plan-btn btn-enterprise" aria-label="Contactar con gerencia para el plan Enterprise">
+            Contactar con gerencia
+          </button>
+        </article>
+
+      </div>
+
+      <p class="plan-nota">
+        Todos los planes incluyen cumplimiento normativa Ministerio de Trabajo España 2026 · RGPD · LOPD · Sin permanencia
+      </p>
+    </section>
+
+    <!-- ============================================================
+         CTA — DESCARGA DEL DOSSIER
+         ============================================================ -->
+    <section id="descarga" aria-labelledby="descarga-titulo">
+      <div class="cta-section">
+
+        <div class="cta-content">
+          <div class="sec-tag" aria-hidden="true">Descarga gratuita</div>
+          <h2 id="descarga-titulo" class="sec-title">
+            Guía Completa de Control Horario<br>para <em>Empresas Españolas</em>
+          </h2>
+          <p class="sec-desc">
+            Aprende qué exige la ley, cómo elegir la herramienta correcta y cómo implantar
+            ASIST·IA en tu empresa en menos de una semana. Sin tecnicismos.
+          </p>
+        </div>
+
+        <div>
+          <form class="cta-form" id="formulario-descarga" novalidate aria-label="Formulario de descarga de guía">
+
+            <div class="form-field">
+              <label for="campo-nombre">Nombre completo</label>
+              <input
+                class="form-input"
+                type="text"
+                id="campo-nombre"
+                name="nombre"
+                placeholder="Tu nombre"
+                autocomplete="name"
+                required
+                aria-required="true"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="campo-email">Email corporativo</label>
+              <input
+                class="form-input"
+                type="email"
+                id="campo-email"
+                name="email"
+                placeholder="tu@empresa.es"
+                autocomplete="email"
+                required
+                aria-required="true"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="campo-empleados">Número de empleados</label>
+              <select
+                class="form-input form-select"
+                id="campo-empleados"
+                name="empleados"
+                required
+                aria-required="true"
+              >
+                <option value="">Selecciona una opción</option>
+                <option value="10-25">10 – 25 empleados</option>
+                <option value="26-50">26 – 50 empleados</option>
+                <option value="51-100">51 – 100 empleados</option>
+                <option value="100+">Más de 100 empleados</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-form">
+              → Quiero mi guía gratuita
+            </button>
+
+            <p class="form-legal">
+              Al enviar aceptas la <a href="privacidad.html" style="color: var(--texto-suave); text-decoration: underline;">política de privacidad</a>.
+              Tus datos son confidenciales y no se compartirán con terceros. RGPD compliant.
+            </p>
+
+          </form>
+
+          <!-- Mensaje de confirmación (oculto hasta envío) -->
+          <div
+            id="form-mensaje-ok"
+            style="display: none; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 1rem; padding: 2rem;"
+            role="alert"
+            aria-live="polite"
+          >
+            <div style="font-size: 36px;" aria-hidden="true">✅</div>
+            <h3 style="font-family: var(--font-display); font-size: 20px;">¡Solicitud recibida!</h3>
+            <p style="color: var(--texto-suave); font-size: 14px;">
+              Te enviaremos la guía a tu email en breve.<br>
+              Si tienes dudas, escríbenos a
+              <a href="mailto:AsesoramientoAsistia@outlook.es" style="color: var(--dorado);">AsesoramientoAsistia@outlook.es</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer aria-label="Pie de página">
+
+    <div class="footer-main">
+
+      <div class="footer-marca">
+        <div class="footer-logo">ASIST·IA</div>
+        <div class="footer-claim">Asistencia Laboral Inteligente</div>
+        <p class="footer-desc">
+          Control horario inteligente para empresas españolas. Cumplimiento legal garantizado.
+          Tecnología enterprise accesible para pymes de 10 a 200 empleados.
+        </p>
+        <p class="footer-version">v4.0.0 · ASP.NET Core 8 · Blazor WebAssembly · PostgreSQL 14</p>
+      </div>
+
+      <nav aria-label="Enlaces legales">
+        <div class="footer-col-title">Legal</div>
+        <a class="footer-link" href="privacidad.html">Política de privacidad</a>
+        <a class="footer-link" href="aviso-legal.html">Aviso legal</a>
+        <a class="footer-link" href="cookies.html">Política de cookies</a>
+        <a class="footer-link" href="rgpd.html">Cumplimiento RGPD</a>
+      </nav>
+
+      <div>
+        <div class="footer-col-title">Contacto</div>
+        <div class="footer-email-group">
+          <span class="footer-email-tipo">Asesoramiento</span>
+          <a class="footer-email-addr" href="mailto:AsesoramientoAsistia@outlook.es">
+            AsesoramientoAsistia@outlook.es
+          </a>
+        </div>
+        <div class="footer-email-group">
+          <span class="footer-email-tipo">Gerencia</span>
+          <a class="footer-email-addr" href="mailto:asistia.web@outlook.com">
+            asistia.web@outlook.com
+          </a>
+        </div>
+        <a class="footer-link" href="https://www.linkedin.com/in/luis-villegas" target="_blank" rel="noopener noreferrer">
+          LinkedIn · Luis Villegas Cebrián
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 ASIST·IA · Luis Villegas Cebrián · Todos los derechos reservados</p>
+      <p class="footer-pais">Desarrollado en España 🇪🇸</p>
+    </div>
+
+  </footer>
+
+  <!-- JS principal -->
+  <script src="assets/js/main.js" defer></script>
+
+</body>
+</html>

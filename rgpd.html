@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cumplimiento RGPD — ASIST·IA</title>
+  <meta name="description" content="Cómo ASIST·IA cumple el Reglamento General de Protección de Datos (RGPD) en su plataforma SaaS de control horario para empresas españolas." />
+  <link rel="icon" type="image/png" href="assets/img/logo-asistia.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    .legal-wrap { max-width: 780px; margin: 0 auto; padding: 4rem 2rem 5rem; }
+    .legal-wrap h1 { font-family: var(--font-display); font-size: clamp(24px, 3vw, 38px); font-weight: 800; color: var(--dorado); margin-bottom: 0.4rem; }
+    .legal-fecha { font-size: 12px; color: var(--texto-suave); letter-spacing: 1px; margin-bottom: 2.5rem; display: block; }
+    .legal-wrap h2 { font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--texto); margin: 2.2rem 0 0.6rem; }
+    .legal-wrap p, .legal-wrap li { font-size: 14px; color: var(--texto-suave); line-height: 1.85; margin-bottom: 0.6rem; }
+    .legal-wrap ul { padding-left: 1.2rem; margin-bottom: 0.6rem; }
+    .legal-wrap ul li::marker { color: var(--dorado); }
+    .legal-wrap a { color: var(--dorado); text-decoration: underline; }
+    .legal-divider { height: 1px; background: var(--borde-suave); margin: 2rem 0; }
+    .legal-highlight { background: var(--dorado-suave); border: 1px solid var(--dorado-borde); border-radius: var(--radio); padding: 1rem 1.4rem; margin: 1.5rem 0; }
+    .legal-highlight p { margin: 0; color: var(--texto-suave); font-size: 13px; }
+    .rgpd-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; margin: 1.2rem 0 1.5rem; }
+    .rgpd-card { background: var(--verde-sup); border: 1px solid var(--borde-suave); border-radius: var(--radio); padding: 1.1rem 1.3rem; }
+    .rgpd-card-icon { font-size: 20px; margin-bottom: 0.5rem; }
+    .rgpd-card-title { font-size: 13px; font-weight: 700; color: var(--texto); margin-bottom: 0.3rem; font-family: var(--font-display); }
+    .rgpd-card-desc { font-size: 12px; color: var(--texto-suave); line-height: 1.6; margin: 0; }
+    .rgpd-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--dorado-suave); border: 1px solid var(--dorado-borde); border-radius: 999px; padding: 4px 12px; font-size: 12px; color: var(--dorado); font-weight: 600; margin: 0.3rem 0.2rem 0.3rem 0; }
+    .rgpd-badge::before { content: '✓'; font-size: 11px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="index.html" class="nav-logo" aria-label="ASIST·IA — Volver al inicio">
+        <img src="assets/img/logo-asistia.png" alt="Logo ASIST·IA" width="38" height="38" />
+        <div class="nav-logo-text">
+          <div class="logo-nombre">ASIST·IA</div>
+          <div class="logo-claim">Asistencia Laboral Inteligente</div>
+        </div>
+      </a>
+      <a href="index.html" class="nav-cta">&larr; Volver al inicio</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="legal-wrap">
+      <div class="sec-tag">Cumplimiento normativo</div>
+      <h1>Cumplimiento RGPD</h1>
+      <span class="legal-fecha">Última actualización: abril de 2026</span>
+
+      <div class="legal-highlight">
+        <p>ASIST·IA ha sido diseñada desde cero con un enfoque de <strong>Privacy by Design y Privacy by Default</strong>, conforme al Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales y Garantía de los Derechos Digitales (LOPD-GDD).</p>
+      </div>
+
+      <div class="rgpd-grid" role="list">
+        <div class="rgpd-card" role="listitem">
+          <div class="rgpd-card-icon">🔐</div>
+          <div class="rgpd-card-title">Cifrado TLS en tránsito</div>
+          <p class="rgpd-card-desc">Toda la comunicación entre cliente y servidor viaja cifrada con TLS 1.2+. Sin datos en claro.</p>
+        </div>
+        <div class="rgpd-card" role="listitem">
+          <div class="rgpd-card-icon">🔑</div>
+          <div class="rgpd-card-title">Autenticación JWT</div>
+          <p class="rgpd-card-desc">Tokens firmados con caducidad. Acceso basado en roles (empleado, RRHH, gerencia). Sin contraseñas genéricas.</p>
+        </div>
+        <div class="rgpd-card" role="listitem">
+          <div class="rgpd-card-icon">🏢</div>
+          <div class="rgpd-card-title">Aislamiento multi-tenant</div>
+          <p class="rgpd-card-desc">Cada empresa opera en un espacio lógico completamente aislado. Imposible acceder a datos de otro cliente.</p>
+        </div>
+        <div class="rgpd-card" role="listitem">
+          <div class="rgpd-card-icon">📦</div>
+          <div class="rgpd-card-title">Servidores en la UE</div>
+          <p class="rgpd-card-desc">Los datos se almacenan exclusivamente en infraestructura ubicada dentro del Espacio Económico Europeo.</p>
+        </div>
+        <div class="rgpd-card" role="listitem">
+          <div class="rgpd-card-icon">🗑️</div>
+          <div class="rgpd-card-title">Derecho al olvido</div>
+          <p class="rgpd-card-desc">Proceso de eliminación completa y verificable de todos los datos de un usuario o empresa a petición.</p>
+        </div>
+        <div class="rgpd-card" role="listitem">
+          <div class="rgpd-card-icon">📋</div>
+          <div class="rgpd-card-title">Registro de actividad</div>
+          <p class="rgpd-card-desc">Logs de auditoría de todos los accesos y operaciones sobre datos personales. Trazabilidad completa.</p>
+        </div>
+      </div>
+
+      <h2>1. Roles en el tratamiento de datos</h2>
+      <p>En el contexto del RGPD, la relación entre ASIST·IA y sus clientes empresariales se estructura de la siguiente forma:</p>
+      <ul>
+        <li><strong>Responsable del tratamiento:</strong> la empresa cliente que contrata ASIST·IA y determina los fines y medios del tratamiento de los datos de sus empleados.</li>
+        <li><strong>Encargado del tratamiento:</strong> ASIST·IA (Luis Villegas Cebrián), que trata los datos en nombre y por cuenta de la empresa cliente, conforme a las instrucciones recibidas.</li>
+        <li><strong>Interesados:</strong> los empleados cuyos datos de fichaje y asistencia son registrados en la plataforma.</li>
+      </ul>
+      <p>Se formaliza un <strong>Contrato de Encargo del Tratamiento (DPA)</strong> con cada cliente empresarial, tal como exige el artículo 28 del RGPD.</p>
+
+      <h2>2. Datos personales tratados en la plataforma</h2>
+      <p>ASIST·IA trata únicamente los datos estrictamente necesarios para la gestión del control horario:</p>
+      <ul>
+        <li>Nombre completo y número de identificación (DNI/NIE) del empleado</li>
+        <li>Registros de entrada y salida con marca de tiempo (timestamp)</li>
+        <li>Coordenadas GPS en el momento del fichaje (solo para validación, no seguimiento continuo)</li>
+        <li>Solicitudes de vacaciones, permisos y ausencias</li>
+        <li>Datos de contacto del responsable de RRHH de la empresa cliente</li>
+      </ul>
+      <p>No se tratan categorías especiales de datos (datos de salud, biométricos, sindicales, etc.) salvo las bajas médicas, que se gestionan como documentos adjuntos sin procesamiento automático de su contenido.</p>
+
+      <h2>3. Base jurídica del tratamiento</h2>
+      <ul>
+        <li><strong>Obligación legal</strong> (art. 6.1.c RGPD): el registro diario de jornada es obligatorio en España conforme al Real Decreto-ley 8/2019 y el Estatuto de los Trabajadores.</li>
+        <li><strong>Ejecución de contrato</strong> (art. 6.1.b RGPD): el tratamiento es necesario para la prestación del servicio contratado entre la empresa y sus empleados.</li>
+        <li><strong>Interés legítimo</strong> (art. 6.1.f RGPD): para el mantenimiento técnico, la seguridad y la prevención del fraude en el sistema.</li>
+      </ul>
+
+      <h2>4. Medidas técnicas y organizativas</h2>
+      <p>ASIST·IA implementa las siguientes medidas de seguridad conforme al artículo 32 del RGPD:</p>
+
+      <div style="margin: 0.5rem 0 1.2rem;">
+        <span class="rgpd-badge">Cifrado TLS 1.2+ en tránsito</span>
+        <span class="rgpd-badge">Autenticación JWT con expiración</span>
+        <span class="rgpd-badge">Control de acceso por roles (RBAC)</span>
+        <span class="rgpd-badge">Aislamiento multi-tenant por base de datos</span>
+        <span class="rgpd-badge">Copias de seguridad cifradas</span>
+        <span class="rgpd-badge">Logs de auditoría inmutables</span>
+        <span class="rgpd-badge">Infraestructura en la UE</span>
+        <span class="rgpd-badge">Actualizaciones de seguridad periódicas</span>
+        <span class="rgpd-badge">Privacy by Design y by Default</span>
+        <span class="rgpd-badge">Minimización de datos</span>
+      </div>
+
+      <h2>5. Transferencias internacionales de datos</h2>
+      <p>ASIST·IA <strong>no realiza transferencias de datos personales fuera del Espacio Económico Europeo (EEE)</strong>. Todos los datos se almacenan y procesan en servidores ubicados dentro de la UE. En caso de utilizar proveedores de servicios de infraestructura (hosting, backups), se verifica que operan bajo las garantías adecuadas del RGPD.</p>
+      <p>La única excepción es el uso de Google Fonts para la tipografía del sitio web de captación (no de la aplicación), lo que puede implicar la transmisión de la IP del visitante a Google LLC. Esto se detalla en la <a href="cookies.html">Política de Cookies</a>.</p>
+
+      <h2>6. Plazos de conservación</h2>
+      <ul>
+        <li><strong>Registros de fichaje:</strong> mínimo 4 años, conforme a la Ley sobre Infracciones y Sanciones en el Orden Social (LISOS) y la normativa de Inspección de Trabajo.</li>
+        <li><strong>Documentos de solicitudes (vacaciones, permisos):</strong> 5 años desde la extinción de la relación laboral.</li>
+        <li><strong>Logs de acceso y auditoría:</strong> 2 años para fines de seguridad.</li>
+        <li>Tras la extinción del contrato con la empresa cliente, los datos se conservan 30 días para permitir la exportación y se eliminan definitivamente transcurrido ese plazo, salvo obligación legal en contrario.</li>
+      </ul>
+
+      <h2>7. Derechos de los interesados</h2>
+      <p>Los empleados cuyos datos se tratan en ASIST·IA pueden ejercer sus derechos RGPD directamente ante la empresa para la que trabajan (responsable del tratamiento). ASIST·IA, como encargada del tratamiento, colaborará con el responsable para atender estas solicitudes en los plazos legales.</p>
+      <p>Para consultas directas sobre privacidad: <a href="mailto:asistia.web@outlook.com">asistia.web@outlook.com</a></p>
+      <p>También puedes presentar una reclamación ante la <strong>Agencia Española de Protección de Datos (AEPD)</strong>: <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">www.aepd.es</a></p>
+
+      <h2>8. Notificación de brechas de seguridad</h2>
+      <p>En caso de detectarse una brecha de seguridad que afecte a datos personales, ASIST·IA se compromete a:</p>
+      <ul>
+        <li>Notificar a la empresa cliente afectada en un plazo máximo de <strong>72 horas</strong> desde su detección, conforme al art. 33 del RGPD.</li>
+        <li>Proporcionar información detallada sobre la naturaleza de la brecha, los datos afectados y las medidas correctoras adoptadas.</li>
+        <li>Cooperar con la empresa cliente en la notificación a la AEPD si procede.</li>
+      </ul>
+
+      <h2>9. Documentación adicional</h2>
+      <p>Para más información sobre el tratamiento de datos en ASIST·IA, consulta:</p>
+      <ul>
+        <li><a href="privacidad.html">Política de Privacidad</a> — tratamiento de datos del sitio web de captación</li>
+        <li><a href="cookies.html">Política de Cookies</a> — uso de cookies en el sitio web</li>
+        <li><a href="aviso-legal.html">Aviso Legal</a> — condiciones de uso y datos del titular</li>
+      </ul>
+
+      <div class="legal-divider"></div>
+      <p style="font-size:12px; color: var(--texto-muy-suave);">© 2026 ASIST·IA · Luis Villegas Cebrián · Todos los derechos reservados</p>
+    </div>
+  </main>
+
+  <footer aria-label="Pie de página">
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 ASIST·IA · Luis Villegas Cebrián · Todos los derechos reservados</p>
+      <p class="footer-pais">Desarrollado en España 🇪🇸</p>
+    </div>
+  </footer>
+
+</body>
+</html>

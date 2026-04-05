@@ -45,40 +45,81 @@ if (navToggle && navLinks) {
 }
 
 /* ============================================================
-   FORMULARIO DE DESCARGA
+   FORMULARIO DE DESCARGA — Formspree
    ============================================================ */
-const formulario = document.getElementById('formulario-descarga');
-const mensajeOk  = document.getElementById('form-mensaje-ok');
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mgopprbo';
+
+const formulario  = document.getElementById('formulario-descarga');
+const mensajeOk   = document.getElementById('form-mensaje-ok');
+const btnEnviar   = formulario ? formulario.querySelector('button[type="submit"]') : null;
 
 if (formulario) {
-  formulario.addEventListener('submit', (e) => {
+  formulario.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const nombre   = formulario.querySelector('#campo-nombre').value.trim();
-    const email    = formulario.querySelector('#campo-email').value.trim();
+
+    const nombre    = formulario.querySelector('#campo-nombre').value.trim();
+    const email     = formulario.querySelector('#campo-email').value.trim();
     const empleados = formulario.querySelector('#campo-empleados').value;
 
     // Validación básica
     if (!nombre || !email || !empleados) {
-      alert('Por favor, completa todos los campos antes de continuar.');
+      mostrarError('Por favor, completa todos los campos antes de continuar.');
       return;
     }
 
     if (!validarEmail(email)) {
-      alert('Introduce un email corporativo válido.');
+      mostrarError('Introduce un email corporativo válido.');
       return;
     }
 
-    // Aquí irá la integración con el backend o servicio de email
-    console.log('Solicitud de descarga:', { nombre, email, empleados });
+    // Estado de carga
+    btnEnviar.disabled = true;
+    btnEnviar.textContent = 'Enviando…';
 
-    // Mostrar confirmación
-    formulario.style.display = 'none';
-    if (mensajeOk) mensajeOk.style.display = 'flex';
+    try {
+      const respuesta = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          nombre,
+          email,
+          empleados,
+          _subject: `Nueva solicitud de guía — ${nombre} (${empleados} empleados)`
+        })
+      });
+
+      if (respuesta.ok) {
+        // Éxito: mostrar confirmación
+        formulario.style.display = 'none';
+        if (mensajeOk) mensajeOk.style.display = 'flex';
+      } else {
+        const datos = await respuesta.json();
+        const msg = datos.errors ? datos.errors.map(e => e.message).join(', ') : 'Error al enviar. Inténtalo de nuevo.';
+        mostrarError(msg);
+        btnEnviar.disabled = false;
+        btnEnviar.textContent = '→ Quiero mi guía gratuita';
+      }
+    } catch (err) {
+      mostrarError('Error de conexión. Comprueba tu internet e inténtalo de nuevo.');
+      btnEnviar.disabled = false;
+      btnEnviar.textContent = '→ Quiero mi guía gratuita';
+    }
   });
 }
 
 function validarEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function mostrarError(msg) {
+  let errorEl = formulario.querySelector('.form-error-msg');
+  if (!errorEl) {
+    errorEl = document.createElement('p');
+    errorEl.className = 'form-error-msg';
+    errorEl.style.cssText = 'color:#E07A5F; font-size:13px; margin-top:0.5rem; text-align:center;';
+    btnEnviar.insertAdjacentElement('afterend', errorEl);
+  }
+  errorEl.textContent = msg;
 }
 
 /* ============================================================

@@ -124,10 +124,14 @@ function mostrarError(msg) {
 
 /* ============================================================
    SMOOTH SCROLL PARA ENLACES ANCLA
+   Solo actúa sobre href="#seccion" — nunca sobre mailto: ni href externos
    ============================================================ */
 document.querySelectorAll('a[href^="#"]').forEach((enlace) => {
+  const href = enlace.getAttribute('href');
+  // Ignorar si no es una ancla de página real (longitud mínima 2: "#x")
+  if (!href || href.length < 2) return;
   enlace.addEventListener('click', (e) => {
-    const destino = document.querySelector(enlace.getAttribute('href'));
+    const destino = document.querySelector(href);
     if (destino) {
       e.preventDefault();
       destino.scrollIntoView({ behavior: 'smooth', block: 'start' });

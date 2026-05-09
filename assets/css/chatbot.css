@@ -1,0 +1,478 @@
+/* =========================================================
+   AI ASISTIA — Premium Enterprise Chatbot
+   ========================================================= */
+
+.aiasistia-chatbot {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 120;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.85rem;
+  pointer-events: none;
+}
+
+.aiasistia-chatbot > * {
+  pointer-events: auto;
+}
+
+.aiasistia-launcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-height: 64px;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(212, 176, 74, 0.26);
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at top left, rgba(79, 152, 163, 0.12), transparent 42%),
+    linear-gradient(180deg, rgba(16, 31, 33, 0.96), rgba(11, 20, 22, 0.98));
+  color: #f4f1ea;
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.34),
+    0 0 0 1px rgba(79, 152, 163, 0.10),
+    inset 0 1px 0 rgba(255,255,255,0.04);
+  backdrop-filter: blur(16px);
+  cursor: pointer;
+  transition:
+    transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 260ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 260ms cubic-bezier(0.22, 1, 0.36, 1);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+.aiasistia-launcher:hover {
+  transform: translateY(-2px);
+  border-color: rgba(212, 176, 74, 0.38);
+  box-shadow:
+    0 22px 48px rgba(0, 0, 0, 0.38),
+    0 0 0 1px rgba(79, 152, 163, 0.16),
+    inset 0 1px 0 rgba(255,255,255,0.06);
+}
+
+.aiasistia-launcher:focus-visible,
+.aiasistia-close:focus-visible,
+.aiasistia-action:focus-visible,
+.aiasistia-inline-link:focus-visible,
+.aiasistia-voice-toggle:focus-visible {
+  outline: 2px solid rgba(212, 176, 74, 0.58);
+  outline-offset: 3px;
+}
+
+.aiasistia-launcher-icon,
+.aiasistia-brand-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background:
+    linear-gradient(180deg, rgba(79, 152, 163, 0.18), rgba(79, 152, 163, 0.08));
+  color: #d4b04a;
+  border: 1px solid rgba(212, 176, 74, 0.22);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+.aiasistia-launcher-icon svg,
+.aiasistia-brand-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.aiasistia-launcher-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.05;
+}
+
+.aiasistia-launcher-text strong {
+  font-size: 0.96rem;
+  letter-spacing: 0.03em;
+  color: #f4f1ea;
+}
+
+.aiasistia-launcher-text small {
+  margin-top: 0.22rem;
+  font-size: 0.78rem;
+  color: rgba(244, 241, 234, 0.68);
+}
+
+.aiasistia-window {
+  width: min(420px, calc(100vw - 1.5rem));
+  height: min(690px, calc(100vh - 7rem));
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 26px;
+  border: 1px solid rgba(79, 152, 163, 0.16);
+  background:
+    radial-gradient(circle at top left, rgba(79, 152, 163, 0.12), transparent 34%),
+    radial-gradient(circle at top right, rgba(212, 176, 74, 0.10), transparent 28%),
+    linear-gradient(180deg, rgba(10, 18, 21, 0.985), rgba(7, 11, 14, 0.995));
+  box-shadow:
+    0 34px 80px rgba(0, 0, 0, 0.42),
+    0 0 0 1px rgba(212, 176, 74, 0.07),
+    inset 0 1px 0 rgba(255,255,255,0.04);
+  -webkit-backdrop-filter: blur(22px);
+  backdrop-filter: blur(22px);
+  transform-origin: bottom right;
+}
+
+.aiasistia-window[hidden] {
+  display: none;
+}
+
+.aiasistia-window-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1rem 0.95rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+}
+
+.aiasistia-window-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.aiasistia-window-brand strong {
+  display: block;
+  font-size: 0.98rem;
+  color: #f4f1ea;
+  letter-spacing: 0.03em;
+}
+
+.aiasistia-window-brand span {
+  display: block;
+  margin-top: 0.18rem;
+  font-size: 0.77rem;
+  color: rgba(244, 241, 234, 0.62);
+}
+
+.aiasistia-window-meta {
+  margin-top: 0.32rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(212, 176, 74, 0.88);
+}
+
+.aiasistia-window-meta::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: #4f98a3;
+  box-shadow: 0 0 0 6px rgba(79, 152, 163, 0.12);
+  flex-shrink: 0;
+}
+
+.aiasistia-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.aiasistia-voice-toggle,
+.aiasistia-close {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.04);
+  color: #f4f1ea;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    background 220ms ease,
+    border-color 220ms ease,
+    transform 220ms ease,
+    color 220ms ease;
+}
+
+.aiasistia-voice-toggle:hover,
+.aiasistia-close:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(212,176,74,0.22);
+  transform: translateY(-1px);
+}
+
+.aiasistia-voice-toggle.is-active {
+  color: #d4b04a;
+  border-color: rgba(212,176,74,0.30);
+  background:
+    linear-gradient(180deg, rgba(212,176,74,0.12), rgba(79,152,163,0.10));
+}
+
+.aiasistia-voice-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+.aiasistia-window-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  height: 100%;
+}
+
+.aiasistia-messages {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 1rem 1rem 0.75rem;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+}
+
+.aiasistia-messages::-webkit-scrollbar {
+  width: 10px;
+}
+
+.aiasistia-messages::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.12);
+  border-radius: 999px;
+}
+
+.aiasistia-message {
+  max-width: 92%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  animation: aiasistiaFadeUp 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.aiasistia-message.user {
+  align-self: flex-end;
+}
+
+.aiasistia-message.bot {
+  align-self: flex-start;
+}
+
+.aiasistia-bubble {
+  padding: 0.95rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.16);
+}
+
+.aiasistia-message.bot .aiasistia-bubble {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.055), rgba(255,255,255,0.025));
+  border: 1px solid rgba(79, 152, 163, 0.16);
+  color: #f4f1ea;
+  border-top-left-radius: 10px;
+}
+
+.aiasistia-message.user .aiasistia-bubble {
+  background:
+    linear-gradient(180deg, rgba(212,176,74,0.16), rgba(79,152,163,0.12));
+  border: 1px solid rgba(212,176,74,0.22);
+  color: #f4f1ea;
+  border-top-right-radius: 10px;
+}
+
+.aiasistia-label {
+  font-size: 0.69rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 234, 0.42);
+  padding-inline: 0.25rem;
+}
+
+.aiasistia-bubble p {
+  margin: 0;
+  color: inherit;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.aiasistia-bubble p + p {
+  margin-top: 0.7rem;
+}
+
+.aiasistia-bullet-list {
+  margin: 0.8rem 0 0;
+  padding-left: 1rem;
+  color: inherit;
+}
+
+.aiasistia-bullet-list li + li {
+  margin-top: 0.35rem;
+}
+
+.aiasistia-inline-links {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.aiasistia-inline-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0.68rem 0.92rem;
+  border-radius: 14px;
+  border: 1px solid rgba(212,176,74,0.20);
+  background: rgba(212,176,74,0.08);
+  color: #d9b85b;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 220ms ease,
+    background 220ms ease,
+    border-color 220ms ease,
+    color 220ms ease;
+}
+
+.aiasistia-inline-link:hover {
+  transform: translateY(-1px);
+  background: rgba(212,176,74,0.14);
+  border-color: rgba(212,176,74,0.32);
+  color: #eed38a;
+}
+
+.aiasistia-quick-actions {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding: 0.95rem 1rem 1rem;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+}
+
+.aiasistia-action {
+  flex: 0 0 auto;
+  max-width: 100%;
+  padding: 0.75rem 0.92rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.04);
+  color: rgba(244, 241, 234, 0.84);
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.25;
+  cursor: pointer;
+  transition:
+    transform 220ms ease,
+    background 220ms ease,
+    border-color 220ms ease,
+    color 220ms ease;
+}
+
+.aiasistia-action:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(79,152,163,0.24);
+  color: #ffffff;
+}
+
+.aiasistia-action.is-primary {
+  background: linear-gradient(180deg, rgba(212,176,74,0.12), rgba(79,152,163,0.10));
+  border-color: rgba(212,176,74,0.22);
+  color: #e2bf63;
+}
+
+.aiasistia-action.is-primary:hover {
+  background: linear-gradient(180deg, rgba(212,176,74,0.18), rgba(79,152,163,0.14));
+  border-color: rgba(212,176,74,0.34);
+}
+
+.aiasistia-window.is-open {
+  animation: aiasistiaWindowIn 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes aiasistiaFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aiasistiaWindowIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (min-width: 1024px) {
+  .aiasistia-launcher {
+    transform: translateX(10px);
+    opacity: 0.97;
+  }
+
+  .aiasistia-launcher:hover {
+    transform: translateX(0) translateY(-2px);
+  }
+}
+
+@media (max-width: 760px) {
+  .aiasistia-chatbot {
+    right: 0.75rem;
+    bottom: 0.75rem;
+    left: 0.75rem;
+    align-items: stretch;
+  }
+
+  .aiasistia-launcher {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .aiasistia-window {
+    width: 100%;
+    height: min(72vh, 640px);
+  }
+
+  .aiasistia-launcher-text strong {
+    font-size: 0.92rem;
+  }
+
+  .aiasistia-launcher-text small {
+    font-size: 0.75rem;
+  }
+
+  .aiasistia-messages {
+    padding: 0.9rem 0.9rem 0.7rem;
+  }
+
+  .aiasistia-quick-actions {
+    padding: 0.85rem 0.9rem 0.95rem;
+  }
+
+  .aiasistia-action {
+    width: 100%;
+    text-align: left;
+  }
+}

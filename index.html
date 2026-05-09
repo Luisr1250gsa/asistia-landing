@@ -3,532 +3,439 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
-  <title>ASIST·IA — Control Horario Inteligente para Empresas Españolas</title>
-  <meta name="description" content="Plataforma SaaS de control horario para empresas españolas. Fichaje GPS, panel RRHH, informes PDF automáticos y cumplimiento normativa 2026. Desde 3,99 €/usuario/mes." />
-  <meta name="keywords" content="control horario, fichaje digital, software RRHH, pymes España, registro jornada, normativa laboral 2026" />
-  <meta name="author" content="Luis Villegas Cebrián" />
-
-  <!-- Open Graph (LinkedIn / redes sociales) -->
-  <meta property="og:title" content="ASIST·IA — Control Horario con Inteligencia Artificial" />
-  <meta property="og:description" content="La plataforma todo en uno para el control horario de tu empresa. Cumple la ley, elimina el fraude y ahorra horas de gestión." />
-  <meta property="og:image" content="assets/img/og-asistia.png" />
-  <meta property="og:url" content="https://asistia.es" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="es_ES" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ASIST·IA — Control Horario Inteligente" />
-  <meta name="twitter:description" content="Fichaje GPS · Panel RRHH · Informes PDF · Cumplimiento legal 2026" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/img/logo-asistia.png" />
-  <link rel="apple-touch-icon" href="assets/img/logo-asistia.png" />
-
-  <!-- Google Fonts -->
+  <title>ASIST·IA — Control Horario con Inteligencia Artificial</title>
+  <meta name="description" content="Control horario inteligente para empresas españolas. Fichaje, solicitudes, informes, analítica y evolución operativa en una plataforma preparada para crecer." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJ9G3TVDFB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-PJ9G3TVDFB');
-  </script>
-
-  <!-- CSS principal -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/chatbot.css" />
 </head>
-
 <body>
-
-  <!-- ============================================================
-       NAVEGACIÓN
-       ============================================================ -->
-  <header>
-    <nav class="nav" aria-label="Navegación principal">
-
-      <a href="#inicio" class="nav-logo" aria-label="ASIST·IA — Inicio">
-        <img src="assets/img/logo-asistia.png" alt="Logo ASIST·IA" width="38" height="38" />
-        <div class="nav-logo-text">
-          <div class="logo-nombre">ASIST·IA</div>
-          <div class="logo-claim">Asistencia Laboral Inteligente</div>
-        </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="ASIST·IA inicio">
+        <img src="assets/img/logo-asistia.png" alt="Logo ASIST·IA" class="brand-logo" />
       </a>
 
-      <ul class="nav-links" id="nav-links" role="list">
-        <li><a href="#funcionalidades">Funcionalidades</a></li>
-        <li><a href="#como-funciona">Cómo funciona</a></li>
-        <li><a href="#precios">Precios</a></li>
-        <li><a href="#equipo">El equipo</a></li>
-      </ul>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#ia">Asistente IA</a>
+        <a href="#roadmap">Evolución</a>
+        <a href="#pricing">Planes</a>
+        <a href="#faq">FAQ</a>
+      </nav>
 
-      <a href="#descarga" class="nav-cta" aria-label="Descargar guía gratuita">Descargar guía</a>
-
-      <button class="nav-toggle" id="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menú">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-    </nav>
+      <div class="header-actions">
+        <a href="#guia" class="btn btn-primary">Descargar guía</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
   </header>
 
   <main id="inicio">
-
-    <!-- ============================================================
-         HERO
-         ============================================================ -->
     <section class="hero" aria-labelledby="hero-titulo">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">CONTROL HORARIO CON IA · ESPAÑA 2026</div>
 
-      <div class="hero-content">
-        <div class="hero-tag" aria-hidden="true">
-          <span class="hero-tag-dot"></span>
-          Control horario con IA · España 2026
-        </div>
+          <h1 id="hero-titulo">
+            Controla el tiempo de tu equipo.
+            <span>Sin complicaciones.</span>
+          </h1>
 
-        <h1 id="hero-titulo">
-          Controla el tiempo<br>
-          de tu equipo.<br>
-          <em>Sin complicaciones.</em>
-        </h1>
+          <p class="hero-lead">
+            Fichaje móvil con GPS, panel de control en tiempo real, informes PDF automáticos e integraciones con tu software actual.
+            Todo en una plataforma que cumple la normativa española 2026.
+          </p>
 
-        <p class="hero-desc">
-          Fichaje móvil con GPS, panel de control en tiempo real, informes PDF automáticos
-          e integraciones con tu software actual. Todo en una plataforma que cumple la
-          normativa española 2026.
-        </p>
+          <p class="hero-support">
+            ASIST·IA unifica control horario, solicitudes, análisis y evolución operativa en una plataforma preparada para empresas españolas.
+          </p>
 
-        <div class="hero-cta-wrap">
-          <a href="#descarga" class="btn-primario">
-            <span aria-hidden="true">→</span>
-            Descarga la guía gratuita
-          </a>
-          <p class="hero-sub">Sin tarjeta de crédito &nbsp;·&nbsp; PDF inmediato &nbsp;·&nbsp; Listo en 2 minutos</p>
-        </div>
-
-        <div class="hero-compliance" role="list" aria-label="Certificaciones de cumplimiento">
-          <div class="badge-legal" role="listitem">
-            <span class="badge-legal-dot" aria-hidden="true"></span>
-            RGPD Compliant
+          <div class="hero-actions">
+            <a href="#guia" class="btn btn-primary btn-large">Descarga la guía gratuita</a>
           </div>
-          <div class="badge-legal" role="listitem">
-            <span class="badge-legal-dot" aria-hidden="true"></span>
-            LOPD
-          </div>
-          <div class="badge-legal" role="listitem">
-            <span class="badge-legal-dot" aria-hidden="true"></span>
-            Min. Trabajo España 2026
+
+          <p class="hero-meta">Sin tarjeta de crédito · PDF inmediato · Listo en 2 minutos</p>
+
+          <div class="hero-badges">
+            <span>RGPD Compliant</span>
+            <span>LOPD</span>
+            <span>Min. Trabajo España 2026</span>
           </div>
         </div>
-      </div>
 
-      <!-- Dashboard simulado -->
-      <div class="hero-visual" aria-hidden="true">
-        <div class="dashboard-mock">
+        <div class="hero-visual" aria-hidden="true">
+          <div class="dashboard-mock">
+            <div class="mock-window-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
 
-          <div class="dash-topbar">
-            <div class="dash-dot" style="background: var(--dorado); opacity: 0.7;"></div>
-            <div class="dash-dot" style="background: rgba(237,232,220,0.2);"></div>
-            <div class="dash-dot" style="background: rgba(237,232,220,0.2);"></div>
-            <span class="dash-label">PANEL DE CONTROL · HOY</span>
+            <div class="mock-header">
+              <div>
+                <p class="mock-kicker">PANEL DE CONTROL</p>
+                <h3>Visión operativa en tiempo real</h3>
+              </div>
+              <div class="mock-status">Activo hoy</div>
+            </div>
+
+            <div class="mock-metrics">
+              <article class="mock-card">
+                <span class="mock-label">Empleados activos</span>
+                <strong>48</strong>
+              </article>
+              <article class="mock-card">
+                <span class="mock-label">Solicitudes pendientes</span>
+                <strong>6</strong>
+              </article>
+              <article class="mock-card">
+                <span class="mock-label">Incidencias abiertas</span>
+                <strong>3</strong>
+              </article>
+            </div>
+
+            <div class="mock-chart-card">
+              <div class="mock-chart-header">
+                <span>Actividad semanal</span>
+                <span>Actualizado</span>
+              </div>
+              <div class="mock-chart">
+                <span style="height: 46%"></span>
+                <span style="height: 68%"></span>
+                <span style="height: 54%"></span>
+                <span style="height: 82%"></span>
+                <span style="height: 61%"></span>
+                <span style="height: 74%"></span>
+                <span style="height: 92%"></span>
+              </div>
+            </div>
+
+            <div class="mock-footer-note">
+              Preparado para capturas reales del dashboard cuando estén listas.
+            </div>
           </div>
-
-          <div class="dash-metrics">
-            <div class="dash-metric">
-              <div class="dash-metric-label">Empleados activos</div>
-              <div class="dash-metric-val" style="color: var(--dorado);">48</div>
-              <div class="dash-bar-track">
-                <div class="dash-bar-fill" style="width: 82%; background: var(--dorado);"></div>
-              </div>
-            </div>
-            <div class="dash-metric">
-              <div class="dash-metric-label">Horas registradas</div>
-              <div class="dash-metric-val" style="color: #7BB89A;">312h</div>
-              <div class="dash-bar-track">
-                <div class="dash-bar-fill" style="width: 65%; background: #7BB89A;"></div>
-              </div>
-            </div>
-            <div class="dash-metric">
-              <div class="dash-metric-label">Incidencias</div>
-              <div class="dash-metric-val" style="color: var(--azul);">2</div>
-              <div class="dash-bar-track">
-                <div class="dash-bar-fill" style="width: 8%; background: var(--azul);"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="dash-row">
-            <div class="dash-card-sm">
-              <div class="dash-icon-circle" style="background: var(--dorado-suave); border: 1px solid var(--dorado-borde);">✓</div>
-              <div class="dash-card-info">
-                <span class="dash-metric-label">Solicitudes hoy</span>
-                <span>3 pendientes</span>
-              </div>
-            </div>
-            <div class="dash-card-sm">
-              <div class="dash-icon-circle" style="background: var(--azul-suave); border: 1px solid var(--azul-borde);">📄</div>
-              <div class="dash-card-info">
-                <span class="dash-metric-label">Informe PDF</span>
-                <span>Listo · Marzo</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="dash-mapa">
-            <div class="dash-mapa-grid" aria-hidden="true"></div>
-            <div class="dash-pin-ring">
-              <div class="dash-pin"></div>
-            </div>
-            <span class="dash-mapa-txt">GPS validado · Valencia, ES</span>
-          </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ============================================================
-         FRANJA TECNOLÓGICA
-         ============================================================ -->
-    <div class="tech-strip" aria-label="Tecnologías utilizadas">
-      <p class="tech-strip-label">Stack tecnológico · Construido con tecnología enterprise</p>
-      <div class="tech-logos" role="list">
-        <div class="tech-item" role="listitem">
-          <span class="tech-dot" style="background: #512BD4;" aria-hidden="true"></span>
-          ASP.NET Core 8
+    <section class="trust-strip" aria-label="Señales de confianza">
+      <div class="container trust-grid">
+        <article class="trust-item">
+          <strong>Cumplimiento</strong>
+          <span>RGPD y normativa laboral española</span>
+        </article>
+        <article class="trust-item">
+          <strong>Demo funcional</strong>
+          <span>Preparado para mostrar uso real</span>
+        </article>
+        <article class="trust-item">
+          <strong>Personalización</strong>
+          <span>Enfoque adaptable por cliente</span>
+        </article>
+        <article class="trust-item">
+          <strong>Trazabilidad</strong>
+          <span>Más control y visibilidad operativa</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="ia" class="ai-section" aria-labelledby="ia-titulo">
+      <div class="container ai-grid">
+        <div class="section-copy">
+          <div class="section-eyebrow">ASISTENTE IA</div>
+          <h2 id="ia-titulo">Analiza tu operativa con una nueva capa de inteligencia</h2>
+          <p>
+            ASIST·IA no se limita a registrar actividad. Añade una capa de análisis que ayuda a interpretar fichajes,
+            solicitudes e incidencias con una lectura más clara del negocio.
+          </p>
+          <p>
+            El asistente está preparado para activarse con la API key del cliente y convertir la información diaria en contexto útil para gestionar mejor.
+          </p>
+
+          <ul class="feature-list">
+            <li>Resumen operativo más rápido</li>
+            <li>Lectura inteligente de actividad reciente</li>
+            <li>Preparado para personalización por cliente</li>
+          </ul>
         </div>
-        <div class="tech-item" role="listitem">
-          <span class="tech-dot" style="background: #7B3FE4;" aria-hidden="true"></span>
-          Blazor WebAssembly
-        </div>
-        <div class="tech-item" role="listitem">
-          <span class="tech-dot" style="background: #336791; border-radius: 50%;" aria-hidden="true"></span>
-          PostgreSQL 14
-        </div>
-        <div class="tech-item" role="listitem">
-          <span class="tech-dot" style="background: #EF4444;" aria-hidden="true"></span>
-          QuestPDF
-        </div>
-        <div class="tech-item" role="listitem">
-          <span class="tech-dot" style="background: #1DA462;" aria-hidden="true"></span>
-          Leaflet.js
-        </div>
-        <div class="tech-item" role="listitem">
-          <span class="tech-dot" style="background: #0078D4;" aria-hidden="true"></span>
-          Azure Ready
-        </div>
-        <div class="tech-item" role="listitem">
-          <span class="tech-dot" style="background: #2496ED;" aria-hidden="true"></span>
-          Docker
-        </div>
-        <div class="tech-item" role="listitem">
-          <span class="tech-dot" style="background: var(--dorado);" aria-hidden="true"></span>
-          JWT Auth
+
+        <div class="ai-visual">
+          <div class="ai-chat-card">
+            <div class="chat-head">
+              <span class="chat-pill">Analista inteligente de negocio</span>
+            </div>
+
+            <div class="chat-message user">
+              <span class="chat-role">Consulta</span>
+              <p>¿Qué incidencias tengo pendientes hoy?</p>
+            </div>
+
+            <div class="chat-message assistant">
+              <span class="chat-role">Respuesta</span>
+              <p>Tienes 3 solicitudes pendientes de revisión, 2 fichajes abiertos sin cierre registrado y una concentración de incidencias en el turno de mañana.</p>
+            </div>
+
+            <div class="chat-placeholder">
+              Placeholder preparado para futura representación visual avanzada del asistente.
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+
+    <section class="pain-section" aria-labelledby="problema-titulo">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-eyebrow">PROBLEMA REAL</div>
+          <h2 id="problema-titulo">Cuando el control depende de Excel, papel o herramientas desconectadas, el problema no es solo administrativo</h2>
+          <p>
+            La falta de trazabilidad, visibilidad y control en tiempo real termina afectando a la operativa, al cumplimiento y a la capacidad de crecer con orden.
+          </p>
+        </div>
+
+        <div class="cards-grid cards-grid-4">
+          <article class="info-card">
+            <h3>Excel</h3>
+            <p>Seguimiento manual, poca trazabilidad y demasiada dependencia de tareas repetitivas.</p>
+          </article>
+          <article class="info-card">
+            <h3>Papel</h3>
+            <p>Errores, pérdida de información y procesos lentos que dificultan una revisión seria.</p>
+          </article>
+          <article class="info-card">
+            <h3>Herramientas aisladas</h3>
+            <p>Datos dispersos, duplicidades y ausencia de una visión operativa centralizada.</p>
+          </article>
+          <article class="info-card">
+            <h3>Gestión reactiva</h3>
+            <p>Se actúa tarde porque no existe una lectura clara de lo que está ocurriendo en el día a día.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="funcionalidades" class="features-section" aria-labelledby="funcionalidades-titulo">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-eyebrow">FUNCIONALIDADES</div>
+          <h2 id="funcionalidades-titulo">Todo lo necesario para gestionar la jornada con más control</h2>
+          <p>
+            ASIST·IA reúne en un solo entorno las funciones clave para registrar, supervisar y ordenar la actividad diaria del equipo.
+          </p>
+        </div>
+
+        <div class="cards-grid cards-grid-3">
+          <article class="feature-card">
+            <h3>Fichaje y validación</h3>
+            <p>Registra la jornada con trazabilidad, control y seguimiento estructurado.</p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Calendario operativo</h3>
+            <p>Consulta actividad, incidencias y seguimiento diario con una visión más clara.</p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Solicitudes y aprobaciones</h3>
+            <p>Gestiona vacaciones, permisos y revisiones internas desde un mismo entorno.</p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Informes automáticos</h3>
+            <p>Genera documentación útil sin repetir procesos manuales innecesarios.</p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Panel en tiempo real</h3>
+            <p>Visualiza el estado general de la operativa con mayor rapidez y claridad.</p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Roles y organización</h3>
+            <p>Ordena accesos, responsabilidades y visibilidad según el perfil de usuario.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="roadmap-section" aria-labelledby="roadmap-titulo">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-eyebrow">DESARROLLO INMINENTE</div>
+          <h2 id="roadmap-titulo">Evolución hacia una plataforma configurable por cliente</h2>
+          <p>
+            Cada empresa trabaja de forma distinta. La evolución de ASIST·IA no apunta a un software rígido,
+            sino a una plataforma premium capaz de adaptarse a la realidad operativa de cada cliente.
+          </p>
+        </div>
+
+        <div class="roadmap-grid">
+          <article class="roadmap-card">
+            <div class="roadmap-icon">01</div>
+            <h3>Plataforma actual</h3>
+            <p>Control horario, solicitudes, informes y base operativa centralizada.</p>
+          </article>
+
+          <article class="roadmap-card featured">
+            <div class="roadmap-icon">02</div>
+            <h3>Desarrollo inminente</h3>
+            <p>CRM/ERP personalizado para el cliente, con adaptación de módulos, flujos y organización interna según su operativa real.</p>
+          </article>
+
+          <article class="roadmap-card">
+            <div class="roadmap-icon">03</div>
+            <h3>Siguiente evolución</h3>
+            <p>Analítica avanzada, visión operativa en tiempo real y nuevas capacidades CRM/ERP personalizadas según los datos y necesidades reales de cada empresa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="screenshots-section" aria-labelledby="capturas-titulo">
+  <div class="container">
+    <div class="section-heading">
+      <div class="section-eyebrow">ASIST·IA POR DENTRO</div>
+      <h2 id="capturas-titulo">Recorre las principales vistas de la plataforma</h2>
+      <p>
+        Esta sección queda preparada para añadir capturas reales con el escalado correcto en cuanto estén disponibles.
+      </p>
     </div>
 
-    <!-- ============================================================
-         EL PROBLEMA
-         ============================================================ -->
-    <section aria-labelledby="problema-titulo">
-      <div class="sec-tag" aria-hidden="true">El problema</div>
-      <h2 id="problema-titulo" class="sec-title">
-        ¿Sigues gestionando el horario con<br>
-        <em>Excel, papel o apps que no conectan?</em>
-      </h2>
+    <div class="screenshots-track">
+      <article class="shot-card">
+        <img src="assets/img/landing-v2-sistema/dashboard-general.jpg" alt="Vista general del dashboard de ASIST·IA" class="shot-image" loading="lazy" />
+        <h3>Dashboard</h3>
+      </article>
 
-      <div class="problems-grid" role="list">
+      <article class="shot-card">
+        <img src="assets/img/landing-v2-sistema/control-horario.jpg" alt="Vista del módulo de control horario de ASIST·IA" class="shot-image" loading="lazy" />
+        <h3>Fichaje</h3>
+      </article>
 
-        <article class="problem-card fade-up" role="listitem">
-          <div class="problem-icon" style="background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.2);" aria-hidden="true">⚖️</div>
-          <h3 class="problem-title">Riesgo legal constante</h3>
-          <p class="problem-desc">El registro horario es obligatorio en España desde 2019. Una inspección de trabajo puede costarte hasta 6.250 € en multas por incumplimiento.</p>
-        </article>
+      <article class="shot-card">
+        <img src="assets/img/landing-v2-sistema/empleados.jpg" alt="Vista del área de empleados de ASIST·IA" class="shot-image" loading="lazy" />
+        <h3>Empleados</h3>
+      </article>
 
-        <article class="problem-card fade-up" role="listitem">
-          <div class="problem-icon" style="background: rgba(74,111,165,0.1); border: 1px solid rgba(74,111,165,0.2);" aria-hidden="true">⏱️</div>
-          <h3 class="problem-title">Horas perdidas cada mes</h3>
-          <p class="problem-desc">Tu equipo de RRHH dedica tiempo valioso a cuadrar fichajes, corregir errores manuales y preparar informes que deberían generarse solos.</p>
-        </article>
+      <article class="shot-card">
+        <img src="assets/img/landing-v2-sistema/solicitudes.jpg" alt="Vista del módulo de solicitudes de ASIST·IA" class="shot-image" loading="lazy" />
+        <h3>Solicitudes</h3>
+      </article>
 
-        <article class="problem-card fade-up" role="listitem">
-          <div class="problem-icon" style="background: rgba(123,184,154,0.1); border: 1px solid rgba(123,184,154,0.2);" aria-hidden="true">🔍</div>
-          <h3 class="problem-title">Sin visibilidad real</h3>
-          <p class="problem-desc">No sabes con certeza quién está trabajando, desde dónde, ni si las horas declaradas coinciden con la realidad de tu empresa.</p>
-        </article>
+      <article class="shot-card">
+        <img src="assets/img/landing-v2-sistema/informes.jpg" alt="Vista del módulo de informes de ASIST·IA" class="shot-image" loading="lazy" />
+        <h3>Informes</h3>
+      </article>
+    </div>
+  </div>
+</section>
 
+    <section class="comparison-section" aria-labelledby="comparativa-titulo">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-eyebrow">COMPARATIVA</div>
+          <h2 id="comparativa-titulo">No todas las formas de controlar la jornada ofrecen el mismo nivel de claridad</h2>
+        </div>
+
+        <div class="cards-grid cards-grid-4">
+          <article class="compare-card">
+            <h3>Excel</h3>
+            <p>Flexible, pero manual y difícil de escalar cuando la operación crece.</p>
+          </article>
+          <article class="compare-card">
+            <h3>Papel</h3>
+            <p>Simple al inicio, pero frágil, lento y poco trazable en el uso real.</p>
+          </article>
+          <article class="compare-card">
+            <h3>Software genérico</h3>
+            <p>Cubre funciones básicas, pero no siempre se adapta al contexto real del cliente.</p>
+          </article>
+          <article class="compare-card compare-card-highlight">
+            <h3>ASIST·IA</h3>
+            <p>Combina control, trazabilidad, evolución operativa y una visión de personalización premium por empresa.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- ============================================================
-         BANDA DE IMÁGENES AMBIENTE
-         ============================================================ -->
-    <div class="img-banda" aria-label="Imágenes del entorno de trabajo">
-      <div class="img-banda-item">
-        <img src="assets/img/ambiente/ambiente-01.jpg" alt="Equipo trabajando en oficina" loading="lazy" width="600" height="400" />
-      </div>
-      <div class="img-banda-item">
-        <img src="assets/img/ambiente/ambiente-02.jpg" alt="Persona fichando desde móvil" loading="lazy" width="600" height="400" />
-      </div>
-      <div class="img-banda-item">
-        <img src="assets/img/ambiente/ambiente-03.jpg" alt="Reunión de RRHH con tablet" loading="lazy" width="600" height="400" />
-      </div>
+   <section class="video-section" aria-labelledby="video-titulo">
+  <div class="container video-grid">
+    <div class="section-copy">
+      <div class="section-eyebrow">DEMO RÁPIDA</div>
+      <h2 id="video-titulo">Ver ASIST·IA en funcionamiento</h2>
+      <p>
+        Un recorrido rápido de 60 segundos por el acceso, el fichaje, las solicitudes y el panel principal de la plataforma.
+      </p>
+      <a href="mailto:AsesoramientoAsistia@outlook.es?subject=Solicitud%20demo%20ASIST%C2%B7IA" class="btn btn-secondary">Ver demo rápida</a>
     </div>
 
-    <!-- ============================================================
-         LA SOLUCIÓN — FUNCIONALIDADES
-         ============================================================ -->
-    <section id="funcionalidades" class="bg-sup" aria-labelledby="solucion-titulo">
-      <div class="sec-tag" aria-hidden="true">La solución</div>
-      <h2 id="solucion-titulo" class="sec-title">
-        ASIST·IA lo resuelve todo.<br><em>En una sola plataforma.</em>
-      </h2>
-      <p class="sec-desc">
-        La competencia te cobra por separado cada módulo. En ASIST·IA todo está incluido
-        desde el primer día, con tecnología enterprise accesible para pymes.
-      </p>
+    <div class="video-placeholder-card">
+      <div class="video-wrapper" style="position:relative;">
+        <video
+          id="demo-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          style="width:100%; height:100%; object-fit:cover; border-radius:inherit;"
+        >
+          <source src="assets/video/landing-v2-demo/demo-1-1.webm" type="video/webm">
+          <source src="assets/video/landing-v2-demo/demo-1-1.mp4" type="video/mp4">
+        </video>
 
-      <div class="features-grid" role="list">
-
-        <article class="feature-card fade-up" role="listitem">
-          <span class="feature-num" aria-hidden="true">01</span>
-          <div class="feature-icon" aria-hidden="true">📱</div>
-          <h3 class="feature-title">Fichaje móvil con GPS</h3>
-          <p class="feature-desc">Tus empleados fichan desde el móvil con validación automática de ubicación GPS. Funciona en iOS y Android. Radio de validación configurable por sede.</p>
-        </article>
-
-        <article class="feature-card fade-up" role="listitem">
-          <span class="feature-num" aria-hidden="true">02</span>
-          <div class="feature-icon" aria-hidden="true">📊</div>
-          <h3 class="feature-title">Panel de control en tiempo real</h3>
-          <p class="feature-desc">Visión completa de toda la plantilla: presencia, ausencias, turnos e incidencias. KPIs actualizados al instante para RRHH y gerencia.</p>
-        </article>
-
-        <article class="feature-card fade-up" role="listitem">
-          <span class="feature-num" aria-hidden="true">03</span>
-          <div class="feature-icon" aria-hidden="true">📄</div>
-          <h3 class="feature-title">Informes PDF automáticos</h3>
-          <p class="feature-desc">Exporta informes listos para inspección con un clic. Generación mensual automática con QuestPDF. Descarga directa desde el panel.</p>
-        </article>
-
-        <article class="feature-card fade-up" role="listitem">
-          <span class="feature-num" aria-hidden="true">04</span>
-          <div class="feature-icon" aria-hidden="true">✍️</div>
-          <h3 class="feature-title">Solicitudes con firma digital</h3>
-          <p class="feature-desc">Vacaciones, permisos, bajas y vestuario con firma digital automática, timestamp y workflow de aprobación con comentarios.</p>
-        </article>
-
-        <article class="feature-card fade-up" role="listitem">
-          <span class="feature-num" aria-hidden="true">05</span>
-          <div class="feature-icon" aria-hidden="true">🔗</div>
-          <h3 class="feature-title">API REST e integraciones</h3>
-          <p class="feature-desc">Compatible con ERP, nóminas y software de RRHH. API REST documentada para integraciones personalizadas con tu stack actual.</p>
-        </article>
-
-        <article class="feature-card fade-up" role="listitem">
-          <span class="feature-num" aria-hidden="true">06</span>
-          <div class="feature-icon" aria-hidden="true">🏢</div>
-          <h3 class="feature-title">Multi-tenant · Tu marca</h3>
-          <p class="feature-desc">Cada empresa tiene su propia identidad visual, colores y logo. Escalable a ilimitados clientes con separación completa de datos.</p>
-        </article>
-
+        <button
+          id="btn-mute"
+          onclick="
+            var v = document.getElementById('demo-video');
+            v.muted = !v.muted;
+            this.textContent = v.muted ? '🔇' : '🔊';
+          "
+          style="
+            position:absolute;
+            bottom:12px;
+            right:12px;
+            background:rgba(0,0,0,0.5);
+            color:white;
+            border:none;
+            border-radius:50%;
+            width:36px;
+            height:36px;
+            font-size:16px;
+            cursor:pointer;
+          "
+        >🔇</button>
       </div>
+    </div>
+  </div>
+</section>
 
-      <p class="feature-diferenciador">
-        <strong>La competencia te cobra por separado cada módulo.</strong>
-        En ASIST·IA todo está incluido desde el primer día, sin costes ocultos ni sorpresas en la factura.
-      </p>
-    </section>
-
-    <!-- ============================================================
-         CAPTURAS DE PANTALLA
-         ============================================================ -->
-    <section class="capturas-section" aria-labelledby="capturas-titulo">
-      <div class="sec-tag" aria-hidden="true">La aplicación</div>
-      <h2 id="capturas-titulo" class="sec-title">
-        Diseñada para ser <em>intuitiva desde el primer día.</em>
-      </h2>
-      <p class="sec-desc">
-        Sin formación técnica. Sin manuales interminables. Tus empleados fichan en segundos y tú tienes el control desde el primer acceso.
-      </p>
-
-      <div class="capturas-grid" role="list">
-
-        <article class="captura-item fade-up" role="listitem">
-          <div class="captura-topbar" aria-hidden="true">
-            <div class="captura-dot" style="background: var(--dorado); opacity:0.7;"></div>
-            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
-            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
-            <span class="captura-titulo">Dashboard · Panel de control</span>
+    <section class="founder-section" aria-labelledby="fundador-titulo">
+      <div class="container founder-grid">
+        <div class="founder-media">
+          <div class="founder-photo-frame">
+            <img src="assets/img/luis-villegas.jpeg" alt="Luis Villegas, fundador de ASIST·IA" />
           </div>
-          <div class="captura-img-wrap">
-            <img src="assets/img/capturas/dashboard.png" alt="Panel de control ASIST·IA" loading="lazy" width="800" height="500" />
-          </div>
-        </article>
-
-        <article class="captura-item fade-up" role="listitem">
-          <div class="captura-topbar" aria-hidden="true">
-            <div class="captura-dot" style="background: var(--dorado); opacity:0.7;"></div>
-            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
-            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
-            <span class="captura-titulo">Fichaje móvil con GPS</span>
-          </div>
-          <div class="captura-img-wrap">
-            <img src="assets/img/capturas/fichaje.png" alt="Fichaje móvil con GPS ASIST·IA" loading="lazy" width="800" height="500" />
-          </div>
-        </article>
-
-        <article class="captura-item fade-up" role="listitem">
-          <div class="captura-topbar" aria-hidden="true">
-            <div class="captura-dot" style="background: var(--dorado); opacity:0.7;"></div>
-            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
-            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
-            <span class="captura-titulo">Calendario de asistencia</span>
-          </div>
-          <div class="captura-img-wrap">
-            <img src="assets/img/capturas/calendario.png" alt="Calendario de asistencia ASIST·IA" loading="lazy" width="800" height="500" />
-          </div>
-        </article>
-
-        <article class="captura-item fade-up" role="listitem">
-          <div class="captura-topbar" aria-hidden="true">
-            <div class="captura-dot" style="background: var(--dorado); opacity:0.7;"></div>
-            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
-            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
-            <span class="captura-titulo">Solicitudes y aprobaciones</span>
-          </div>
-          <div class="captura-img-wrap">
-            <img src="assets/img/capturas/solicitudes.png" alt="Solicitudes y aprobaciones ASIST·IA" loading="lazy" width="800" height="500" />
-          </div>
-        </article>
-
-        <article class="captura-item fade-up" role="listitem">
-          <div class="captura-topbar" aria-hidden="true">
-            <div class="captura-dot" style="background: var(--dorado); opacity:0.7;"></div>
-            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
-            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
-            <span class="captura-titulo">Informe PDF automático</span>
-          </div>
-          <div class="captura-img-wrap">
-            <img src="assets/img/capturas/informe.png" alt="Informe PDF automático ASIST·IA" loading="lazy" width="800" height="500" />
-          </div>
-        </article>
-
-        <article class="captura-item fade-up" role="listitem">
-          <div class="captura-topbar" aria-hidden="true">
-            <div class="captura-dot" style="background: var(--dorado); opacity:0.7;"></div>
-            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
-            <div class="captura-dot" style="background: rgba(237,232,220,0.2);"></div>
-            <span class="captura-titulo">Login · Autenticación DNI/NIE</span>
-          </div>
-          <div class="captura-img-wrap">
-            <img src="assets/img/capturas/login.png" alt="Login autenticación DNI/NIE ASIST·IA" loading="lazy" width="800" height="500" />
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ============================================================
-         CÓMO FUNCIONA
-         ============================================================ -->
-    <section id="como-funciona" class="bg-sup" aria-labelledby="pasos-titulo">
-      <div class="sec-tag" aria-hidden="true">Cómo funciona</div>
-      <h2 id="pasos-titulo" class="sec-title">
-        Empieza en <em>3 pasos.</em><br>Sin formación técnica.
-      </h2>
-
-      <div class="steps-grid" role="list">
-
-        <div class="step fade-up" role="listitem">
-          <div class="step-num" aria-label="Paso 1">1</div>
-          <h3 class="step-title">Configura tu empresa</h3>
-          <p class="step-desc">Añade tu plantilla, horarios, turnos y ubicaciones GPS en minutos. Sin instalación.</p>
         </div>
 
-        <div class="step fade-up" role="listitem">
-          <div class="step-num" aria-label="Paso 2">2</div>
-          <h3 class="step-title">Tus empleados fichan</h3>
-          <p class="step-desc">App móvil intuitiva. Acceso por DNI/NIE sin contraseñas que olvidar. iOS y Android.</p>
-        </div>
-
-        <div class="step fade-up" role="listitem">
-          <div class="step-num" aria-label="Paso 3">3</div>
-          <h3 class="step-title">Tú controlas todo</h3>
-          <p class="step-desc">Informes, alertas, aprobaciones y exportaciones desde un panel unificado. En tiempo real.</p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ============================================================
-         ESTADÍSTICAS — PRUEBA SOCIAL
-         ============================================================ -->
-    <section aria-labelledby="stats-titulo">
-      <div class="sec-tag" aria-hidden="true">El mercado lo necesita</div>
-      <h2 id="stats-titulo" class="sec-title">
-        Construido para la<br><em>realidad de las pymes españolas.</em>
-      </h2>
-
-      <div class="stats-grid" role="list">
-        <div class="stat-card fade-up" role="listitem">
-          <div class="stat-num">1,2M+</div>
-          <p class="stat-desc">empresas en España obligadas a registrar diariamente la jornada laboral de sus trabajadores</p>
-        </div>
-        <div class="stat-card fade-up" role="listitem">
-          <div class="stat-num">67%</div>
-          <p class="stat-desc">de las pymes aún no dispone de un sistema digital de control horario homologado</p>
-        </div>
-        <div class="stat-card fade-up" role="listitem">
-          <div class="stat-num">6.250€</div>
-          <p class="stat-desc">multa mínima por incumplimiento del registro horario obligatorio según inspección de trabajo</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         EL EQUIPO — FUNDADOR
-         ============================================================ -->
-    <section id="equipo" class="bg-sup" aria-labelledby="equipo-titulo">
-      <div class="sec-tag" aria-hidden="true">El equipo</div>
-      <h2 id="equipo-titulo" class="sec-title">
-        Detrás de ASIST·IA hay<br><em>experiencia real.</em>
-      </h2>
-
-      <div class="founder-grid">
-
-        <div class="founder-img-wrap">
-          <img
-            class="founder-img"
-            src="assets/img/luis-villegas.jpeg"
-            alt="Luis Villegas Cebrián, fundador y desarrollador de ASIST·IA"
-            loading="lazy"
-            width="220"
-            height="260"
-          />
-          <div class="founder-frame" aria-hidden="true"></div>
-          <div class="founder-badge">Fundador &amp; CTO</div>
-        </div>
-
-        <div class="founder-info">
-          <h3 class="founder-nombre">Luis Villegas Cebrián</h3>
-          <p class="founder-rol">Desarrollador Full-Stack · ASP.NET · Blazor · PostgreSQL</p>
-          <p class="founder-bio">
-            Desarrollador full-stack especializado en soluciones empresariales para el mercado español.
-            ASIST·IA nace de la necesidad real de las pymes de cumplir la normativa laboral sin depender
-            de herramientas caras, fragmentadas o difíciles de implantar.
+        <div class="founder-copy">
+          <div class="section-eyebrow">VISIÓN DEL PROYECTO</div>
+          <h2 id="fundador-titulo">Una visión clara: control, trazabilidad y evolución real para cada empresa</h2>
+          <p>
+            ASIST·IA nace con una idea sencilla: ofrecer una solución seria para el control horario de hoy,
+            pero preparada para convertirse en una plataforma más amplia, más inteligente y más adaptable a cada cliente.
           </p>
-          <p class="founder-bio" style="margin-top: 1rem;">
-            Construido con tecnología enterprise — ASP.NET Core 8, Blazor WebAssembly y PostgreSQL —
-            para garantizar la seguridad, escalabilidad y cumplimiento legal que tu empresa necesita.
-            Diseñado desde cero para cumplir la normativa del Ministerio de Trabajo España 2026.
-          </p>
+
+          <blockquote class="founder-quote">
+            “ASIST·IA no nace para registrar horas sin más, sino para ayudar a cada empresa a ganar control, claridad y capacidad de evolución.”
+          </blockquote>
+
           <div class="founder-links">
             <a
               href="https://www.linkedin.com/in/luisvillegascebrian/"
@@ -537,6 +444,7 @@
               rel="noopener noreferrer"
               aria-label="Perfil de LinkedIn de Luis Villegas Cebrián"
             >LinkedIn</a>
+
             <a
               href="mailto:asistia.web@outlook.com"
               class="founder-link"
@@ -544,6 +452,7 @@
               rel="noopener noreferrer"
               aria-label="Enviar email a asistia.web@outlook.com"
             >asistia.web@outlook.com</a>
+
             <a
               href="mailto:AsesoramientoAsistia@outlook.es"
               class="founder-link"
@@ -553,234 +462,313 @@
             >Solicitar asesoramiento</a>
           </div>
         </div>
-
       </div>
     </section>
 
-    <!-- ============================================================
-         PLANES Y PRECIOS
-         ============================================================ -->
-    <section id="precios" aria-labelledby="precios-titulo">
-      <div class="sec-tag" aria-hidden="true">Planes y precios</div>
-      <h2 id="precios-titulo" class="sec-title">
-        Elige el plan que <em>se adapta a tu empresa.</em>
-      </h2>
-      <p class="sec-desc">
-        Precios transparentes, sin costes ocultos. Todos los planes incluyen las funcionalidades principales.
-        Cambia o cancela cuando quieras.
-      </p>
-
-      <div class="planes-grid" role="list">
-
-        <article class="plan-card fade-up" role="listitem" aria-label="Plan Starter">
-          <h3 class="plan-nombre">Starter</h3>
-          <div class="plan-precio">3,99€ <span>/ usuario / mes</span></div>
-          <p class="plan-para">Para equipos de 10 a 25 personas</p>
-          <div class="plan-divider"></div>
-          <div class="plan-feature">Fichaje móvil con GPS validado</div>
-          <div class="plan-feature">Panel de control RRHH</div>
-          <div class="plan-feature">Informes PDF automáticos</div>
-          <div class="plan-feature">Solicitudes con firma digital</div>
-          <div class="plan-feature">Autenticación por DNI/NIE</div>
-          <div class="plan-feature">Cumplimiento normativa 2026</div>
-          <button class="plan-btn btn-solicitar" data-plan="Starter" aria-label="Solicitar información sobre el plan Starter">
-            Solicitar información
-          </button>
-        </article>
-
-        <article class="plan-card destacado fade-up" role="listitem" aria-label="Plan Business, el más popular">
-          <div class="plan-popular" aria-label="Plan más popular">Más popular</div>
-          <h3 class="plan-nombre">Business</h3>
-          <div class="plan-precio">5,99€ <span>/ usuario / mes</span></div>
-          <p class="plan-para">Para empresas de 25 a 100 personas</p>
-          <div class="plan-divider"></div>
-          <div class="plan-feature">Todo lo del plan Starter</div>
-          <div class="plan-feature">Gestión avanzada de turnos</div>
-          <div class="plan-feature">Multi-sede y multi-ubicación</div>
-          <div class="plan-feature">API REST con integraciones</div>
-          <div class="plan-feature">Alertas y notificaciones</div>
-          <div class="plan-feature">Soporte prioritario</div>
-          <button class="plan-btn btn-solicitar" data-plan="Business" aria-label="Solicitar información sobre el plan Business">
-            Solicitar información
-          </button>
-        </article>
-
-        <article class="plan-card fade-up" role="listitem" aria-label="Plan Enterprise">
-          <h3 class="plan-nombre">Enterprise</h3>
-          <div class="plan-precio" style="font-size: 20px; padding-top: 5px;">A consultar</div>
-          <p class="plan-para">Más de 100 empleados · Multi-tenant</p>
-          <div class="plan-divider"></div>
-          <div class="plan-feature">Todo lo del plan Business</div>
-          <div class="plan-feature">Identidad visual propia</div>
-          <div class="plan-feature">Implantación personalizada</div>
-          <div class="plan-feature">SLA y soporte dedicado</div>
-          <div class="plan-feature">Multisede y multiempresa</div>
-          <div class="plan-feature">Auditorías independientes</div>
-          <button class="plan-btn btn-enterprise" aria-label="Contactar con gerencia para el plan Enterprise">
-            Contactar con gerencia
-          </button>
-        </article>
-
-      </div>
-
-      <p class="plan-nota">
-        Todos los planes incluyen cumplimiento normativa Ministerio de Trabajo España 2026 · RGPD · LOPD · Sin permanencia
-      </p>
-    </section>
-
-    <!-- ============================================================
-         CTA — DESCARGA DEL DOSSIER
-         ============================================================ -->
-    <section id="descarga" aria-labelledby="descarga-titulo">
-      <div class="cta-section">
-
-        <div class="cta-content">
-          <div class="sec-tag" aria-hidden="true">Descarga gratuita</div>
-          <h2 id="descarga-titulo" class="sec-title">
-            Guía Completa de Control Horario<br>para <em>Empresas Españolas</em>
-          </h2>
-          <p class="sec-desc">
-            Aprende qué exige la ley, cómo elegir la herramienta correcta y cómo implantar
-            ASIST·IA en tu empresa en menos de una semana. Sin tecnicismos.
+    <section id="pricing" class="pricing-section" aria-labelledby="pricing-titulo">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-eyebrow">PLANES</div>
+          <h2 id="pricing-titulo">Planes pensados para distintos momentos de crecimiento</h2>
+          <p>
+            Desde equipos pequeños hasta organizaciones con necesidades más complejas, ASIST·IA se adapta al tamaño y la evolución de cada empresa.
           </p>
         </div>
 
+        <article class="micro-plan-highlight">
+          <div>
+            <span class="micro-tag">MICROEMPRESAS</span>
+            <h3>2 a 5 trabajadores</h3>
+            <p>Plan a medida · Consultar</p>
+          </div>
+          <a href="mailto:AsesoramientoAsistia@outlook.es?subject=Consulta%20plan%20microempresas%20ASIST%C2%B7IA" class="btn btn-secondary">Solicitar información</a>
+        </article>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Starter</h3>
+            <p class="price-subtitle">Para equipos que necesitan orden desde el primer día.</p>
+            <p class="price-note">PRECIO SEGÚN TAMAÑO Y NECESIDADES</p>
+            <ul>
+              <li>Control horario básico</li>
+              <li>Panel inicial</li>
+              <li>Informes esenciales</li>
+            </ul>
+            <a
+              href="#guia"
+              class="btn btn-secondary plan-cta"
+              data-plan="Plan Starter"
+              data-empleados="6-20"
+              data-asunto="Solicitud ASIST·IA — Plan Starter"
+            >Solicitar información</a>
+          </article>
+
+          <article class="price-card featured">
+            <h3>Business</h3>
+            <p class="price-includes">TODO LO DE STARTER INCLUIDO</p>
+            <p class="price-subtitle">Para empresas que necesitan más control y seguimiento.</p>
+            <p class="price-note">PRECIO SEGÚN TAMAÑO Y NECESIDADES</p>
+            <ul>
+              <li>Solicitudes y aprobaciones</li>
+              <li>Mayor visibilidad operativa</li>
+              <li>Automatización ampliada</li>
+            </ul>
+            <a
+              href="#guia"
+              class="btn btn-primary plan-cta"
+              data-plan="Plan Business"
+              data-empleados="21-50"
+              data-asunto="Solicitud ASIST·IA — Plan Business · Solicitud de demo"
+            >Solicitar demo</a>
+          </article>
+
+          <article class="price-card">
+            <h3>Enterprise</h3>
+            <p class="price-includes">TODO LO DE BUSINESS INCLUIDO</p>
+            <p class="price-subtitle">Para organizaciones con estructura más compleja.</p>
+            <p class="price-note">PRECIO SEGÚN TAMAÑO Y NECESIDADES</p>
+            <ul>
+              <li>Escalabilidad</li>
+              <li>Enfoque avanzado</li>
+              <li>Personalización progresiva</li>
+            </ul>
+            <a
+              href="#guia"
+              class="btn btn-secondary plan-cta"
+              data-plan="Plan Enterprise"
+              data-empleados="51+"
+              data-asunto="Solicitud ASIST·IA — Plan Enterprise · Consulta técnica"
+            >Solicitar asesoramiento técnico</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq-section" aria-labelledby="faq-titulo">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-eyebrow">FAQ</div>
+          <h2 id="faq-titulo">Preguntas frecuentes</h2>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item">
+            <h3>¿ASIST·IA sirve también para empresas pequeñas?</h3>
+            <p>Sí. La plataforma está pensada para adaptarse tanto a equipos pequeños como a estructuras más amplias.</p>
+          </article>
+
+          <article class="faq-item">
+            <h3>¿Necesito una instalación compleja?</h3>
+            <p>No. El objetivo del producto es reducir fricción y facilitar una implantación clara y progresiva.</p>
+          </article>
+
+          <article class="faq-item">
+            <h3>¿Puedo solicitar una demo antes de decidir?</h3>
+            <p>Sí. De hecho, es la mejor forma de comprobar cómo encaja la plataforma con la operativa real de tu empresa.</p>
+          </article>
+
+          <article class="faq-item">
+            <h3>¿El asistente IA es obligatorio?</h3>
+            <p>No. Se plantea como una capa de valor añadida, preparada para activarse según la necesidad de cada cliente.</p>
+          </article>
+
+          <article class="faq-item">
+            <h3>¿La plataforma se puede personalizar?</h3>
+            <p>Sí. Ese es uno de los pilares de evolución del proyecto, especialmente en la hoja de ruta CRM/ERP.</p>
+          </article>
+
+          <article class="faq-item">
+            <h3>¿ASIST·IA seguirá evolucionando con nuevas funciones?</h3>
+            <p>Sí. La plataforma está concebida con una visión de crecimiento, mejora continua y adaptación por cliente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="guia" class="guide-section" aria-labelledby="guia-titulo">
+      <div class="container guide-box">
         <div>
-          <form class="cta-form" id="formulario-descarga" novalidate aria-label="Formulario de descarga de guía">
+          <div class="section-eyebrow">GUÍA GRATUITA</div>
+          <h2 id="guia-titulo">Solicita una demo y descubre cómo encaja ASIST·IA en tu empresa</h2>
+          <p>
+            Conoce la plataforma, revisa el flujo de trabajo y valora su encaje real según el tamaño y la operativa de tu negocio.
+          </p>
+        </div>
+
+        <div class="guide-actions">
+          <form id="formulario-descarga" class="cta-form" novalidate>
+            <div class="selected-plan-box" id="selected-plan-box" aria-live="polite">
+              <span class="selected-plan-label">Plan seleccionado</span>
+              <strong id="selected-plan-text">Consulta general</strong>
+            </div>
+
+            <input type="hidden" id="campo-plan" name="plan" value="Consulta general" />
+            <input type="hidden" id="campo-asunto" name="asunto" value="Solicitud ASIST·IA — Consulta general" />
 
             <div class="form-field">
-              <label for="campo-nombre">Nombre completo</label>
-              <input
-                class="form-input"
-                type="text"
-                id="campo-nombre"
-                name="nombre"
-                placeholder="Tu nombre"
-                autocomplete="name"
-                required
-                aria-required="true"
-              />
+              <label for="campo-nombre">Nombre</label>
+              <input id="campo-nombre" name="nombre" type="text" class="form-input" placeholder="Tu nombre" />
             </div>
 
             <div class="form-field">
               <label for="campo-email">Email corporativo</label>
-              <input
-                class="form-input"
-                type="email"
-                id="campo-email"
-                name="email"
-                placeholder="tu@empresa.es"
-                autocomplete="email"
-                required
-                aria-required="true"
-              />
+              <input id="campo-email" name="email" type="email" class="form-input" placeholder="nombre@empresa.com" />
             </div>
 
             <div class="form-field">
-              <label for="campo-empleados">Número de empleados</label>
-              <select
-                class="form-input form-select"
-                id="campo-empleados"
-                name="empleados"
-                required
-                aria-required="true"
-              >
+              <label for="campo-empleados">Tamaño de empresa</label>
+              <select id="campo-empleados" name="empleados" class="form-input form-select">
                 <option value="">Selecciona una opción</option>
-                <option value="10-25">10 – 25 empleados</option>
-                <option value="26-50">26 – 50 empleados</option>
-                <option value="51-100">51 – 100 empleados</option>
-                <option value="100+">Más de 100 empleados</option>
+                <option value="2-5">2 a 5 trabajadores</option>
+                <option value="6-20">6 a 20 trabajadores</option>
+                <option value="21-50">21 a 50 trabajadores</option>
+                <option value="51+">Más de 50 trabajadores</option>
               </select>
             </div>
 
-            <button type="submit" class="btn-form">
-              → Quiero mi guía gratuita
-            </button>
+            <button type="submit" class="btn btn-primary btn-form">→ Quiero mi guía gratuita</button>
 
             <p class="form-legal">
-              Al enviar aceptas la <a href="privacidad.html" style="color: var(--texto-suave); text-decoration: underline;">política de privacidad</a>.
-              Tus datos son confidenciales y no se compartirán con terceros. RGPD compliant.
+              Al enviar este formulario aceptas el tratamiento de tus datos para gestionar tu solicitud.
             </p>
-
           </form>
 
-          <!-- Mensaje de confirmación (oculto hasta envío) -->
-          <div
-            id="form-mensaje-ok"
-            style="display: none; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 1rem; padding: 2rem;"
-            role="alert"
-            aria-live="polite"
-          >
-            <div style="font-size: 36px;" aria-hidden="true">✅</div>
-            <h3 style="font-family: var(--font-display); font-size: 20px;">¡Solicitud recibida!</h3>
-            <p style="color: var(--texto-suave); font-size: 14px;">
-              Te enviaremos la guía a tu email en breve.<br>
-              Si tienes dudas, escríbenos a
-              <a href="mailto:AsesoramientoAsistia@outlook.es" style="color: var(--dorado);">AsesoramientoAsistia@outlook.es</a>
-            </p>
+          <div id="form-mensaje-ok" style="display:none;">
+            <div>
+              <h3>Solicitud recibida correctamente</h3>
+              <p>
+                Gracias. Hemos recibido tu solicitud y revisaremos el encaje de ASIST·IA según el tipo de empresa indicado.
+              </p>
+            </div>
           </div>
         </div>
-
       </div>
     </section>
 
+    <section class="stack-section" aria-labelledby="stack-titulo">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-eyebrow">BASE TECNOLÓGICA</div>
+          <h2 id="stack-titulo">Construido con tecnología preparada para evolucionar</h2>
+          <p>
+            ASIST·IA se apoya en una arquitectura moderna orientada a estabilidad, crecimiento y personalización,
+            manteniendo el foco en el uso real por parte de la empresa.
+          </p>
+        </div>
+
+        <div class="stack-grid">
+          <span>ASP.NET Core 8</span>
+          <span>Blazor WebAssembly</span>
+          <span>SignalR</span>
+          <span>QuestPDF</span>
+          <span>SQL Server</span>
+          <span>Docker</span>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- ============================================================
-       FOOTER
-       ============================================================ -->
-  <footer aria-label="Pie de página">
-
-    <div class="footer-main">
-
-      <div class="footer-marca">
-        <div class="footer-logo">ASIST·IA</div>
-        <div class="footer-claim">Asistencia Laboral Inteligente</div>
-        <p class="footer-desc">
-          Control horario inteligente para empresas españolas. Cumplimiento legal garantizado.
-          Tecnología enterprise accesible para pymes de 10 a 200 empleados.
-        </p>
-        <p class="footer-version">v4.0.0 · ASP.NET Core 8 · Blazor WebAssembly · PostgreSQL 14</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/img/logo-asistia.png" alt="Logo ASIST·IA" class="brand-logo" />
+        <p>Asistencia Laboral Inteligente para empresas españolas.</p>
       </div>
 
-      <nav aria-label="Enlaces legales">
-        <div class="footer-col-title">Legal</div>
-        <a class="footer-link" href="privacidad.html">Política de privacidad</a>
-        <a class="footer-link" href="aviso-legal.html">Aviso legal</a>
-        <a class="footer-link" href="cookies.html">Política de cookies</a>
-        <a class="footer-link" href="rgpd.html">Cumplimiento RGPD</a>
-      </nav>
-
-      <div>
-        <div class="footer-col-title">Contacto</div>
-        <div class="footer-email-group">
-          <span class="footer-email-tipo">Asesoramiento</span>
-          <a class="footer-email-addr" href="mailto:AsesoramientoAsistia@outlook.es" target="_blank" rel="noopener noreferrer">
-            AsesoramientoAsistia@outlook.es
-          </a>
-        </div>
-        <div class="footer-email-group">
-          <span class="footer-email-tipo">Gerencia</span>
-          <a class="footer-email-addr" href="mailto:asistia.web@outlook.com" target="_blank" rel="noopener noreferrer">
-            asistia.web@outlook.com
-          </a>
-        </div>
-        <a class="footer-link" href="https://www.linkedin.com/in/luisvillegascebrian/" target="_blank" rel="noopener noreferrer">
-          LinkedIn · Luis Villegas Cebrián
-        </a>
+      <div class="footer-links">
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="cookies.html">Cookies</a>
       </div>
 
+      <div class="footer-links footer-contact">
+        <a href="mailto:AsesoramientoAsistia@outlook.es" target="_blank" rel="noopener noreferrer">AsesoramientoAsistia@outlook.es</a>
+        <a href="mailto:asistia.web@outlook.com" target="_blank" rel="noopener noreferrer">asistia.web@outlook.com</a>
+        <a href="https://www.linkedin.com/in/luisvillegascebrian/" target="_blank" rel="noopener noreferrer">LinkedIn · Luis Villegas Cebrián</a>
+      </div>
     </div>
-
-    <div class="footer-bottom">
-      <p class="footer-copy">© 2026 ASIST·IA · Luis Villegas Cebrián · Todos los derechos reservados</p>
-      <p class="footer-pais">Desarrollado en España 🇪🇸</p>
-    </div>
-
   </footer>
 
-  <!-- JS principal -->
-  <script src="assets/js/main.js" defer></script>
+ <!-- AI ASISTIA Chatbot -->
+<div class="aiasistia-chatbot" id="aiasistia-chatbot">
+  <button
+    class="aiasistia-launcher"
+    id="aiasistia-launcher"
+    type="button"
+    aria-label="Abrir asistente virtual AI ASISTIA"
+    aria-expanded="false"
+    aria-controls="aiasistia-window"
+  >
+    <span class="aiasistia-launcher-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M12 3C7.03 3 3 6.58 3 11c0 2.08.9 3.97 2.38 5.38L5 21l4.05-1.92c.91.25 1.9.38 2.95.38 4.97 0 9-3.58 9-8s-4.03-8.46-9-8.46Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8.5 11h.01M12 11h.01M15.5 11h.01" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+    <span class="aiasistia-launcher-text">
+      <strong>AI ASISTIA</strong>
+      <small>Asistente virtual</small>
+    </span>
+  </button>
 
+  <aside
+    class="aiasistia-window"
+    id="aiasistia-window"
+    aria-label="Ventana del asistente AI ASISTIA"
+    hidden
+  >
+    <div class="aiasistia-window-header">
+      <div class="aiasistia-window-brand">
+        <div class="aiasistia-brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 3C7.03 3 3 6.58 3 11c0 2.08.9 3.97 2.38 5.38L5 21l4.05-1.92c.91.25 1.9.38 2.95.38 4.97 0 9-3.58 9-8s-4.03-8.46-9-8.46Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8.5 11h.01M12 11h.01M15.5 11h.01" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <strong>AI ASISTIA</strong>
+          <span>Inteligencia aplicada a procesos empresariales</span>
+          <div class="aiasistia-window-meta">Asistente consultivo activo</div>
+        </div>
+      </div>
+
+      <div class="aiasistia-header-actions">
+        <button
+          class="aiasistia-voice-toggle is-active"
+          id="aiasistia-voice-toggle"
+          type="button"
+          aria-label="Desactivar lectura por voz"
+          title="Lectura por voz activa"
+        >
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M11 5 6.5 9H3v6h3.5L11 19V5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M15 9.5c1 .8 1.5 1.8 1.5 2.5s-.5 1.7-1.5 2.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M17.8 7c1.8 1.5 2.7 3.2 2.7 5s-.9 3.5-2.7 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+
+        <button
+          class="aiasistia-close"
+          id="aiasistia-close"
+          type="button"
+          aria-label="Cerrar asistente virtual"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="aiasistia-window-body">
+      <div class="aiasistia-messages" id="aiasistia-messages" aria-live="polite"></div>
+
+      <div class="aiasistia-quick-actions" id="aiasistia-quick-actions">
+        <!-- render dinámico -->
+      </div>
+    </div>
+  </aside>
+</div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/chatbot.js"></script>
 </body>
 </html>

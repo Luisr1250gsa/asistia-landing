@@ -816,6 +816,17 @@ main section {
   scroll-snap-align: start;
 }
 
+.shot-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
 .shot-placeholder,
 .video-placeholder {
   min-height: 240px;
